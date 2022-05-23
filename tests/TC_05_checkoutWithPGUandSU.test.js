@@ -33,195 +33,195 @@ Test Steps:
 22.	Verify whether user is on the login page 
 */
 
-const test = require('../testFixtures/fixture')
-const { expect } = require('@playwright/test')
-const fs = require('fs')
+const test = require("../testFixtures/fixture");
+const { expect } = require("@playwright/test");
+const fs = require("fs");
 
-const testData = JSON.parse(fs.readFileSync(`./data/users.json`, `utf-8`))
+const testData = JSON.parse(fs.readFileSync(`./data/users.json`, `utf-8`));
 
 const {
-	baseUrl,
-	title,
-	landingPageUrl,
-	yourCartUrl,
-	checkoutYourInformationUrl,
-	checkoutOverviewUrl,
-	checkoutCompleteUrl
-} = require('../config')
+  baseUrl,
+  title,
+  landingPageUrl,
+  yourCartUrl,
+  checkoutYourInformationUrl,
+  checkoutOverviewUrl,
+  checkoutCompleteUrl,
+} = require("../config");
 
 test.describe.parallel(
-	'Login as a Locked out user and Performance glitch user and complete the checkout workflow with Standard user' +
-		'',
-	() => {
-		test('Login to App as a Locked out user user', async ({ loginPage }) => {
-			await test.step(`Open the APP and check logo`, async () => {
-				await loginPage.openApp()
-				await loginPage.loginPageLogo()
-				expect(await loginPage.getTitle()).toBe(title)
-				expect(await loginPage.getUrl()).toContain(baseUrl)
-			})
+  "Login as a Locked out user and Performance glitch user and complete the checkout workflow with Standard user" +
+    "",
+  () => {
+    test("Login to App as a Locked out user user", async ({ loginPage }) => {
+      await test.step(`Open the APP and check logo`, async () => {
+        await loginPage.openApp();
+        await loginPage.loginPageLogo();
+        expect(await loginPage.getTitle()).toBe(title);
+        expect(await loginPage.getUrl()).toContain(baseUrl);
+      });
 
-			await test.step(`Login as a problem user`, async () => {
-				await loginPage.loginAsLockedOutUser()
-			})
+      await test.step(`Login as a problem user`, async () => {
+        await loginPage.loginAsLockedOutUser();
+      });
 
-			await test.step(
-				`Verify the error message on the login page`,
-				async () => {
-					await loginPage.verifyErrorMessage()
-					await loginPage.VerifyLockedOutUserErrorMessage()
-					expect(await loginPage.getUrl()).toContain(baseUrl)
-				}
-			)
-		})
+      await test.step(
+        `Verify the error message on the login page`,
+        async () => {
+          await loginPage.verifyErrorMessage();
+          await loginPage.VerifyLockedOutUserErrorMessage();
+          expect(await loginPage.getUrl()).toContain(baseUrl);
+        }
+      );
+    });
 
-		test('Login to App as a Performance glitch user', async ({
-			loginPage,
-			productsPage,
-			productDetailsPage,
-			yourCartPage,
-			checkoutYourInformationPage,
-			checkoutOverviewPage,
-			checkoutCompletePage
-		}) => {
-			await test.step(
-				`Open the APP and check logo on the Login page`,
-				async () => {
-					await loginPage.openApp()
-					await loginPage.loginPageLogo()
-					expect(await loginPage.getTitle()).toBe(title)
-					expect(await loginPage.getUrl()).toContain(baseUrl)
-				}
-			)
+    test("Login to App as a Performance glitch user", async ({
+      loginPage,
+      productsPage,
+      productDetailsPage,
+      yourCartPage,
+      checkoutYourInformationPage,
+      checkoutOverviewPage,
+      checkoutCompletePage,
+    }) => {
+      await test.step(
+        `Open the APP and check logo on the Login page`,
+        async () => {
+          await loginPage.openApp();
+          await loginPage.loginPageLogo();
+          expect(await loginPage.getTitle()).toBe(title);
+          expect(await loginPage.getUrl()).toContain(baseUrl);
+        }
+      );
 
-			await test.step(`Login as a Performance glitch user`, async () => {
-				await loginPage.loginAsPerformanceGlitchUser()
-			})
+      await test.step(`Login as a Performance glitch user`, async () => {
+        await loginPage.loginAsPerformanceGlitchUser();
+      });
 
-			await test.step(`Verify landing page title and url`, async () => {
-				await productsPage.verifyProductsPageTitleVisible()
-				expect(await productsPage.getUrl()).toContain(landingPageUrl)
-			})
+      await test.step(`Verify landing page title and url`, async () => {
+        await productsPage.verifyProductsPageTitleVisible();
+        expect(await productsPage.getUrl()).toContain(landingPageUrl);
+      });
 
-			await test.step(
-				`Click on Add to Cart button on Product Details page and verify shopping cart is updated to "1" item`,
-				async () => {
-					await productDetailsPage.clickAddToCartButton()
-					await productDetailsPage.shoppingCartCount()
-				}
-			)
-			await test.step(
-				`user clicks on shopping cart and navigates to your cart page`,
-				async () => {
-					await productsPage.clickShoppingCartLink()
-					await yourCartPage.titleVisible()
-					expect(await productsPage.getUrl()).toContain(yourCartUrl)
-				}
-			)
+      await test.step(
+        `Click on Add to Cart button on Product Details page and verify shopping cart is updated to "1" item`,
+        async () => {
+          await productDetailsPage.clickAddToCartButton();
+          await productDetailsPage.shoppingCartCount();
+        }
+      );
+      await test.step(
+        `user clicks on shopping cart and navigates to your cart page`,
+        async () => {
+          await productsPage.clickShoppingCartLink();
+          await yourCartPage.titleVisible();
+          expect(await productsPage.getUrl()).toContain(yourCartUrl);
+        }
+      );
 
-			await test.step(
-				`User clicks on "checkout button" on your cart page and navigates to Checkout:Your Information page`,
-				async () => {
-					await yourCartPage.clickCheckoutBtn()
-					await checkoutYourInformationPage.titleVisible()
-					expect(await checkoutYourInformationPage.getUrl()).toBe(
-						checkoutYourInformationUrl
-					)
-				}
-			)
+      await test.step(
+        `User clicks on "checkout button" on your cart page and navigates to Checkout:Your Information page`,
+        async () => {
+          await yourCartPage.clickCheckoutBtn();
+          await checkoutYourInformationPage.titleVisible();
+          expect(await checkoutYourInformationPage.getUrl()).toBe(
+            checkoutYourInformationUrl
+          );
+        }
+      );
 
-			await test.step(
-				`User types in the firstname+lastname+postalcode and click continue button to navigate to Checkout:Overview page`,
-				async () => {
-					await checkoutYourInformationPage.typeFirstName()
-					await checkoutYourInformationPage.typeLastName()
-					await checkoutYourInformationPage.typePostalCode()
-					await checkoutYourInformationPage.clickContinueBtn()
-				}
-			)
+      await test.step(
+        `User types in the firstname+lastname+postalcode and click continue button to navigate to Checkout:Overview page`,
+        async () => {
+          await checkoutYourInformationPage.typeFirstName();
+          await checkoutYourInformationPage.typeLastName();
+          await checkoutYourInformationPage.typePostalCode();
+          await checkoutYourInformationPage.clickContinueBtn();
+        }
+      );
 
-			await test.step(`User is on Checkout:Overview page`, async () => {
-				await checkoutOverviewPage.titleVisible()
-				expect(await yourCartPage.getUrl()).toBe(checkoutOverviewUrl)
-			})
+      await test.step(`User is on Checkout:Overview page`, async () => {
+        await checkoutOverviewPage.titleVisible();
+        expect(await yourCartPage.getUrl()).toBe(checkoutOverviewUrl);
+      });
 
-			await test.step(
-				`User Logs out from the application and navigates back to login page`,
-				async () => {
-					await productsPage.burgerButtonClick()
-					await productsPage.clickLogoutSideBarLink()
-					expect(await loginPage.getTitle()).toBe(title)
-					expect(await loginPage.getUrl()).toBe(baseUrl)
-				}
-			)
+      await test.step(
+        `User Logs out from the application and navigates back to login page`,
+        async () => {
+          await productsPage.burgerButtonClick();
+          await productsPage.clickLogoutSideBarLink();
+          expect(await loginPage.getTitle()).toBe(title);
+          expect(await loginPage.getUrl()).toBe(baseUrl);
+        }
+      );
 
-			await test.step(
-				`User Login as a Standard user and verify whether the user landed on Products page`,
-				async () => {
-					await loginPage.loginAsStandardUser()
-					await productsPage.verifyProductsPageTitleVisible()
-					expect(await productsPage.getUrl()).toContain(landingPageUrl)
-				}
-			)
+      await test.step(
+        `User Login as a Standard user and verify whether the user landed on Products page`,
+        async () => {
+          await loginPage.loginAsStandardUser();
+          await productsPage.verifyProductsPageTitleVisible();
+          expect(await productsPage.getUrl()).toContain(landingPageUrl);
+        }
+      );
 
-			await test.step(
-				`Verify shopping cart have "1" item added by the Problem user earlier`,
-				async () => {
-					await productDetailsPage.shoppingCartCount()
-				}
-			)
+      await test.step(
+        `Verify shopping cart have "1" item added by the Problem user earlier`,
+        async () => {
+          await productDetailsPage.shoppingCartCount();
+        }
+      );
 
-			await test.step(
-				`Standard user clicks on shopping cart and navigates to your cart page`,
-				async () => {
-					await productsPage.clickShoppingCartLink()
-					await yourCartPage.titleVisible()
-					expect(await productsPage.getUrl()).toContain(yourCartUrl)
-				}
-			)
+      await test.step(
+        `Standard user clicks on shopping cart and navigates to your cart page`,
+        async () => {
+          await productsPage.clickShoppingCartLink();
+          await yourCartPage.titleVisible();
+          expect(await productsPage.getUrl()).toContain(yourCartUrl);
+        }
+      );
 
-			await test.step(
-				`Standard user clicks on "checkout button" on your cart page and navigates to Checkout:Your Information page`,
-				async () => {
-					await yourCartPage.clickCheckoutBtn()
-					await checkoutYourInformationPage.titleVisible()
-					expect(await checkoutYourInformationPage.getUrl()).toBe(
-						checkoutYourInformationUrl
-					)
-				}
-			)
-			await test.step(
-				`Standard user types in the firstname and click continue button on Checkout:Your Information page`,
-				async () => {
-					await checkoutYourInformationPage.typeFirstName()
-					await checkoutYourInformationPage.typeLastName()
-					await checkoutYourInformationPage.typePostalCode()
-					await checkoutYourInformationPage.clickContinueBtn()
-				}
-			)
+      await test.step(
+        `Standard user clicks on "checkout button" on your cart page and navigates to Checkout:Your Information page`,
+        async () => {
+          await yourCartPage.clickCheckoutBtn();
+          await checkoutYourInformationPage.titleVisible();
+          expect(await checkoutYourInformationPage.getUrl()).toBe(
+            checkoutYourInformationUrl
+          );
+        }
+      );
+      await test.step(
+        `Standard user types in the firstname and click continue button on Checkout:Your Information page`,
+        async () => {
+          await checkoutYourInformationPage.typeFirstName();
+          await checkoutYourInformationPage.typeLastName();
+          await checkoutYourInformationPage.typePostalCode();
+          await checkoutYourInformationPage.clickContinueBtn();
+        }
+      );
 
-			await test.step(`User is on Checkout:Overview page`, async () => {
-				await checkoutOverviewPage.titleVisible()
-				expect(await yourCartPage.getUrl()).toBe(checkoutOverviewUrl)
-			})
+      await test.step(`User is on Checkout:Overview page`, async () => {
+        await checkoutOverviewPage.titleVisible();
+        expect(await yourCartPage.getUrl()).toBe(checkoutOverviewUrl);
+      });
 
-			await test.step(
-				`Standard user clicks on "Finish" Button on Checkout:Overview page to navigate to Checkout:Complete page`,
-				async () => {
-					await checkoutOverviewPage.clickFinishBtn()
-					await checkoutCompletePage.titleVisible()
-					expect(await checkoutOverviewPage.getUrl()).toBe(checkoutCompleteUrl)
-				}
-			)
+      await test.step(
+        `Standard user clicks on "Finish" Button on Checkout:Overview page to navigate to Checkout:Complete page`,
+        async () => {
+          await checkoutOverviewPage.clickFinishBtn();
+          await checkoutCompletePage.titleVisible();
+          expect(await checkoutOverviewPage.getUrl()).toBe(checkoutCompleteUrl);
+        }
+      );
 
-			await test.step(
-				`Standard user logs out of the application and navigates back to login page`,
-				async () => {
-					await productsPage.burgerButtonClick()
-					await productsPage.clickLogoutSideBarLink()
-					expect(await loginPage.getUrl()).toBe(baseUrl)
-				}
-			)
-		})
-	}
-)
+      await test.step(
+        `Standard user logs out of the application and navigates back to login page`,
+        async () => {
+          await productsPage.burgerButtonClick();
+          await productsPage.clickLogoutSideBarLink();
+          expect(await loginPage.getUrl()).toBe(baseUrl);
+        }
+      );
+    });
+  }
+);

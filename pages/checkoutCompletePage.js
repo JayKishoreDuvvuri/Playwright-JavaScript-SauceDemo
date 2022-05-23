@@ -1,88 +1,93 @@
-const BasePage = require('./basePage')
-const fs = require('fs')
+const BasePage = require("./basePage");
+const fs = require("fs");
 const {
-	appLogo,
-	burgerMenuBtn,
-	shoppingCartLink,
-	footerText,
-	swagBotFooter,
-	twitterLink,
-	facebookLink,
-	linkedInLink
-} = require('../pageobjects/productsPage')
+  appLogo,
+  burgerMenuBtn,
+  shoppingCartLink,
+  footerText,
+  swagBotFooter,
+  twitterLink,
+  facebookLink,
+  linkedInLink,
+} = require("../pageobjects/productsPage");
 const {
-	title,
-	completeHeader,
-	completeText,
-	ponyExpressImage,
-	backHomeButton
-} = require('../pageobjects/checkoutCompletePage')
+  title,
+  completeHeader,
+  completeText,
+  ponyExpressImage,
+  backHomeButton,
+} = require("../pageobjects/checkoutCompletePage");
 
-const testData = JSON.parse(fs.readFileSync(`./data/users.json`, `utf-8`))
+const testData = JSON.parse(fs.readFileSync(`./data/users.json`, `utf-8`));
 
 class CheckoutCompletePage extends BasePage {
-	constructor(page) {
-		super(page)
-	}
+  constructor(page) {
+    super(page);
+  }
 
-	async verifyLogoVisible() {
-		return	await this.isElementVisible(appLogo, testData.notVisibleText)
-	
-	}
+  async verifyLogoVisible() {
+    return await this.isElementVisible(appLogo, testData.notVisibleText);
+  }
 
-	async verifyBurgerMenuButtonVisible() {
-		return	await this.isElementVisible(burgerMenuBtn, testData.notVisibleText)
+  async verifyBurgerMenuButtonVisible() {
+    return await this.isElementVisible(burgerMenuBtn, testData.notVisibleText);
+  }
 
-	}
+  async shoppingCartLinkVisible() {
+    return await this.isElementVisible(
+      shoppingCartLink,
+      testData.notVisibleText
+    );
+  }
 
-	async shoppingCartLinkVisible() {
-		return await this.isElementVisible(shoppingCartLink, testData.notVisibleText)
+  async shoppingCartCount() {
+    return await this.verifyElementText(
+      shoppingCartLink,
+      testData.cartCountEmpty
+    );
+  }
 
-	}
+  async titleVisible() {
+    return await this.isElementVisible(title, testData.notVisibleText);
+  }
 
-	async shoppingCartCount() {
-		return await this.verifyElementText(shoppingCartLink, testData.cartCountEmpty)
-	}
+  async completeHeaderVisible() {
+    await this.isElementVisible(completeHeader, testData.notVisibleText);
+    return await this.verifyElementText(
+      completeHeader,
+      testData.completeHeaderText
+    );
+  }
 
-	async titleVisible() {
-		return await this.isElementVisible(title, testData.notVisibleText)
-	
-	}
+  async completeTextVisible() {
+    await this.isElementVisible(completeText, testData.notVisibleText);
+    return await this.verifyElementText(
+      completeText,
+      testData.completeOrderText
+    );
+  }
 
-	async completeHeaderVisible() {
-		await this.isElementVisible(completeHeader, testData.notVisibleText)
-		return	await this.verifyElementText(completeHeader, testData.completeHeaderText)
+  async ponyExpressImageVisible() {
+    return await this.isElementVisible(
+      ponyExpressImage,
+      testData.notVisibleText
+    );
+  }
 
-	}
+  async backHomeButtonISEnabled() {
+    return await this.isElementEnabled(backHomeButton, testData.notEnabledText);
+  }
 
-	async completeTextVisible() {
-		await this.isElementVisible(completeText, testData.notVisibleText)
-		return	await this.verifyElementText(completeText, testData.completeOrderText)
+  async VerifySocialandFooterLinks() {
+    await this.isElementVisible(facebookLink, testData.notVisibleText);
+    await this.isElementVisible(twitterLink, testData.notVisibleText);
+    await this.isElementVisible(linkedInLink, testData.notVisibleText);
+    await this.isElementVisible(swagBotFooter, testData.notVisibleText);
+    await this.isElementVisible(footerText, testData.notVisibleText);
+  }
 
-	}
-
-	async ponyExpressImageVisible() {
-		return await this.isElementVisible(ponyExpressImage, testData.notVisibleText)
-
-	}
-
-	async backHomeButtonISEnabled() {
-		return	await this.isElementEnabled(backHomeButton, testData.notEnabledText)
-
-	}
-
-	async VerifySocialandFooterLinks() {
-		await this.isElementVisible(facebookLink, testData.notVisibleText)
-		await this.isElementVisible(twitterLink, testData.notVisibleText)
-		await this.isElementVisible(linkedInLink, testData.notVisibleText)
-		await this.isElementVisible(swagBotFooter, testData.notVisibleText)
-		await this.isElementVisible(footerText, testData.notVisibleText)
-	
-	}
-
-	async clickBackHomeButton() {
-		return	await this.waitAndClick(backHomeButton, testData.notEnabledText)
-
-	}
+  async clickBackHomeButton() {
+    return await this.waitAndClick(backHomeButton, testData.notEnabledText);
+  }
 }
-module.exports = CheckoutCompletePage
+module.exports = CheckoutCompletePage;

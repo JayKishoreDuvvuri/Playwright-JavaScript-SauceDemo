@@ -1,44 +1,44 @@
 {
-	"name": "playwright-test-automation",
-	"version": "1.0.0",
-	"description": "Playwright Test Runner with JavaScript",
-	"main": "index.js",
-	"scripts": {
-		"test": "npx playwright test",
-		"test:smoke": "npx playwright test --grep @smoke --project=Chrome",
-		"test:serial": "npx playwright test --workers=1 --project=Chrome",
-		"test:chrome": "npx playwright test --project=Chrome --reporter=html && npx playwright show-report",
-		"test:firefox": "npx playwright test --project=Firefox --reporter=line,allure-playwright",
-		"test:edge": "npx playwright test --project=Edge --reporter=html && npx playwright show-report",
-		"test:safari": "npx playwright test --project=WebKit --reporter=line,allure-playwright",
-		"test:shard": "npx playwright test TC_01_productPage.test.js --shard=3/3 --project=Chrome",
-		"test:one": "npx playwright test TC_01_productPage.test.js --project=Chrome",
-		"test:two": "npx playwright test TC_02_checkoutWorkflow.test.js  --project=Chrome",
-		"test:three": "npx playwright test TC_03_checkoutWithSUandPGU.test.js --project=Chrome",
-		"test:four": "npx playwright test TC_04_checkoutWithPUandPGU.test.js --project=Chrome",
-		"test:five": "npx playwright test TC_05_checkoutWithPGUandSU.test.js --project=Chrome",
-		"test:record": "npx playwright codegen",
-		"html-report": "npx playwright test --reporter=html && npx playwright show-report",
-		"show-trace": "npx playwright show-trace",
-		"allure:clean": "rm -rf allure-results",
-		"allure-generate": "allure generate ./allure-results --clean",
-		"allure:report": "npm run allure-generate && allure serve"
-	},
-	"keywords": [
-		"Plawright",
-		"Test Runner",
-		"Test Automation",
-		"JavaScript"
-	],
-	"author": "Jay Kishore Duvvuri",
-	"license": "ISC",
-	"dependencies": {
-		"fs": "^0.0.1-security",
-		"playwright": "^1.22.1",
-		"prettier": "^2.6.2"
-	},
-	"devDependencies": {
-		"@playwright/test": "^1.22.1",
-		"allure-playwright": "^2.0.0-beta.16"
-	}
+  "name": "playwright-test-automation",
+  "version": "1.0.0",
+  "description": "Playwright Test Runner with JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:smoke": "npx playwright test --grep @smoke --project=Chrome",
+    "test:serial": "npx playwright test --workers=1 --project=Chrome",
+    "test:chrome": "npx playwright test --project=Chrome --reporter=html && npx playwright show-report",
+    "test:firefox": "npx playwright test --project=Firefox --reporter=line,allure-playwright",
+    "test:edge": "npx playwright test --project=Edge --reporter=html && npx playwright show-report",
+    "test:safari": "npx playwright test --project=WebKit --reporter=line,allure-playwright",
+    "test:shard": "npx playwright test TC_01_productPage.test.js --shard=3/3 --project=Chrome",
+    "test:one": "npx playwright test TC_01_productPage.test.js --project=Chrome",
+    "test:two": "npx playwright test TC_02_checkoutWorkflow.test.js  --project=Chrome",
+    "test:three": "npx playwright test TC_03_checkoutWithSUandPGU.test.js --project=Chrome",
+    "test:four": "npx playwright test TC_04_checkoutWithPUandPGU.test.js --project=Chrome",
+    "test:five": "npx playwright test TC_05_checkoutWithPGUandSU.test.js --project=Chrome",
+    "test:record": "npx playwright codegen",
+    "html-report": "npx playwright test --reporter=html && npx playwright show-report",
+    "show-trace": "npx playwright show-trace",
+    "allure:clean": "rm -rf allure-results",
+    "allure-generate": "allure generate ./allure-results --clean",
+    "allure:report": "npm run allure-generate && allure serve"
+  },
+  "keywords": [
+    "Plawright",
+    "Test Runner",
+    "Test Automation",
+    "JavaScript"
+  ],
+  "author": "Jay Kishore Duvvuri",
+  "license": "ISC",
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "playwright": "^1.22.1",
+    "prettier": "^2.6.2"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.22.1",
+    "allure-playwright": "^2.0.0-beta.16"
+  }
 }
