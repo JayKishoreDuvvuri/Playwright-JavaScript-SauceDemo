@@ -2,7 +2,7 @@ module.exports = {
   testDir: "tests",
   timeout: 45000,
   retries: 1,
-  reporter: [["list"], ["./CustomReporter.js"]],
+  reporter: [["line"], ["./CustomReporter.js"]],
   projects: [
     {
       name: `Chrome`,

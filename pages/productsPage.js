@@ -291,13 +291,11 @@ class ProductsPage extends BasePage {
 
   async getFirstItemFromInventory() {
     const firstItem = await this.getFirstElementFromTheList(listOfElements);
-    console.log("First Item:", firstItem);
     return firstItem;
   }
 
   async getLastItemFromInventory() {
     const lastItem = await this.getLastElementFromTheList(listOfElements);
-    console.log("Last Item:", lastItem);
     return lastItem;
   }
 
