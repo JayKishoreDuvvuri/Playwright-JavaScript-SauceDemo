@@ -257,7 +257,6 @@ test.describe.serial("Verify All Social Channel Links", () => {
     ]);
     await newPage.waitForLoadState("domcontentloaded");
     await newPage.waitForLoadState("networkidle");
-    expect(await newPage.title()).toContain(twitterTitle);
     expect(newPage.url()).toBe(twitterUrl);
   });
 });
