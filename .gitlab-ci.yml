@@ -1,0 +1,10 @@
+stages:
+  - test
+
+tests:
+  stage: test
+  image: mcr.microsoft.com/playwright:v1.22.0-focal
+  script:
+    - npm install
+    - npx playwright install chrome
+    - npm run test:chrome
