@@ -30,7 +30,7 @@ module.exports = {
       },
     },
     {
-      name: `WebKit`,
+      name: `Safari`,
       use: {
         browserName: `webkit`,
         viewport: { width: 1720, height: 850 },
