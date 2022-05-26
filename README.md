@@ -135,6 +135,6 @@ Allure-test-report :
 
 #### GitLab
 ```bash
-##### Repo: https://gitlab.com/j1182/playwright-javascript
-###### Pipelines: https://gitlab.com/j1182/playwright-javascript/-/pipelines
+Repo: https://gitlab.com/j1182/playwright-javascript
+Pipelines: https://gitlab.com/j1182/playwright-javascript/-/pipelines
 ```
