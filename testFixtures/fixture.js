@@ -3,7 +3,7 @@ const LoginPage = require("../pages/loginPage");
 const ProductsPage = require("../pages/productsPage");
 const ProductDetailsPage = require("../pages/productDetailsPage");
 const YourCartPage = require("../pages/yourCartPage");
-const CheckoutYourInformationPage = require("../pages/CheckoutYourInformationPage");
+const CheckoutYourInformationPage = require("../pages/checkoutYourInformationPage");
 const CheckoutOverviewPage = require("../pages/checkoutOverviewPage");
 const CheckoutCompletePage = require("../pages/checkoutCompletePage");
 
