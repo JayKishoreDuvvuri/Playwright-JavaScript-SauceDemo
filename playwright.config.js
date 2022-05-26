@@ -1,6 +1,6 @@
 module.exports = {
   testDir: "tests",
-  timeout: 45000,
+  timeout: 60000,
   retries: 1,
   reporter: [["line"], ["./CustomReporter.js"]],
   projects: [
