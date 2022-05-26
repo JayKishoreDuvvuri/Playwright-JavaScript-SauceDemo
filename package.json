@@ -9,7 +9,7 @@
     "test:serial": "npx playwright test --workers=1 --project=Chrome",
     "test:chrome": "npx playwright test --project=Chrome",
     "test:firefox": "npx playwright test --project=Firefox",
-    "test:safari": "npx playwright test --project=Safari",
+    "test:safari": "npx playwright test TC_02_checkoutWorkflow.test.js --project=Safari",
     "test:edge": "npx playwright test --project=Edge",
     "test:chrome-report": "npx playwright test --project=Chrome --reporter=html && npx playwright show-report",
     "test:firefox-report": "npx playwright test --project=Firefox --reporter=line,allure-playwright",
