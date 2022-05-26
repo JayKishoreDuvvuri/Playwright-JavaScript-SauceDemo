@@ -10,7 +10,7 @@
     "test:chrome": "npx playwright test --project=Chrome",
     "test:firefox": "npx playwright test --project=Firefox",
     "test:safari": "npx playwright test --project=Safari",
-    "test:edge": "npx playwright test --project=Edge --workers=3",
+    "test:edge": "npx playwright test --project=Edge",
     "test:chrome-report": "npx playwright test --project=Chrome --reporter=html && npx playwright show-report",
     "test:firefox-report": "npx playwright test --project=Firefox --reporter=line,allure-playwright",
     "test:edge-report": "npx playwright test --project=Edge --reporter=html && npx playwright show-report",
