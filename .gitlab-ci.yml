@@ -7,4 +7,4 @@ tests:
   script:
     - npm install
     - npx playwright install
-    - npm run test:safari
+    - npm run test:edge
