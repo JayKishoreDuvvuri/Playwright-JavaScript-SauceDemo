@@ -6,5 +6,5 @@ tests:
   image: mcr.microsoft.com/playwright:v1.22.0-focal
   script:
     - npm install
-    - npx playwright install
+    - npx playwright install msedge
     - npm run test:edge
