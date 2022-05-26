@@ -6,5 +6,5 @@ tests:
   image: mcr.microsoft.com/playwright:v1.22.0-focal
   script:
     - npm install
-    - npx playwright install chrome
-    - npm run test:chrome
+    - npx playwright install
+    - npm run test:firefox
