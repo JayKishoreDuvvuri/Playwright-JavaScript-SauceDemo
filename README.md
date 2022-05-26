@@ -132,3 +132,9 @@ Allure-test-report :
 2.	npm run test:firefox (OR) npm run test:safari
 3.	npm run allure:report
 ```
+
+#### GitLab
+```bash
+**Repo**: https://gitlab.com/j1182/playwright-javascript
+**Pipelines**: https://gitlab.com/j1182/playwright-javascript/-/pipelines
+```
