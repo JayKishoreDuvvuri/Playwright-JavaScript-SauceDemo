@@ -11,7 +11,7 @@ We are using https://www.saucedemo.com/ as the Application Under Test. This App 
 - IDE : Visual Studio Code
 
 #### Scenarios
-
+ 
 ```bash
 Scenario 1: Login as a standard user to verify the products page and logout from the application
 
