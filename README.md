@@ -11,7 +11,7 @@ We are using https://www.saucedemo.com/ as the Application Under Test. This App 
 - IDE : Visual Studio Code
 
 #### Scenarios
-
+ 
 ```bash
 Scenario 1: Login as a standard user to verify the products page and logout from the application
 
@@ -131,4 +131,10 @@ Allure-test-report :
 1.	npm run allure:clean
 2.	npm run test:firefox (OR) npm run test:safari
 3.	npm run allure:report
+```
+
+#### GitLab
+```bash
+Repo: https://gitlab.com/j1182/playwright-javascript
+Pipelines: https://gitlab.com/j1182/playwright-javascript/-/pipelines
 ```
