@@ -52,7 +52,7 @@ Performance_glitch_user log into the application and completes the checkout work
 Testname: TC_04_checkoutWithPUandPGU.test.js
 ```
 
-```bash
+```bash 
 Scenario 5: Login as locked_out_user to verify error message and then Login as performance_glitch_user
 to add a product item to the cart and logout from the application.
 Login as a standard user now to complete the checkout workflow.
