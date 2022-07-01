@@ -6,7 +6,7 @@ An example project demonstrating automation of playwright tests using page objec
 
 We are using https://www.saucedemo.com/ as the Application Under Test. This App is a **React.js** Frontend
 
-- URL: https://www.saucedemo.com/
+- URL: https://www.saucedemo.com/ 
 - OS : macOS
 - IDE : Visual Studio Code
 
