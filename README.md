@@ -40,7 +40,7 @@ including error messages by the standard user. Then the checkout process is ther
 Testname: TC_03_checkoutWithSUandPGU.test.js
 ```
 
-```bash
+```bash 
 Scenario 4: Login as a “problem_user” to add a product item to the shopping cart and then complete
 the checkout workflow by logging in as a “performance_glitch_user”
 
