@@ -20,7 +20,7 @@ page and logs out from the application. This is like a Smoke test.
 
 Testname: TC_01_productPage.test.js
 ```
-
+ 
 ```bash
 Scenario 2: Login as a standard user to complete the checkout workflow
 
