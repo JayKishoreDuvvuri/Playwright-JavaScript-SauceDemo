@@ -6,10 +6,10 @@ An example project demonstrating automation of playwright tests using page objec
 
 We are using https://www.saucedemo.com/ as the Application Under Test. This App is a **React.js** Frontend
 
-- URL: https://www.saucedemo.com/
-- OS : macOS
+- URL: https://www.saucedemo.com/ 
+- OS : macOS 
 - IDE : Visual Studio Code
-
+ 
 #### Scenarios
 
 ```bash
@@ -40,7 +40,7 @@ including error messages by the standard user. Then the checkout process is ther
 Testname: TC_03_checkoutWithSUandPGU.test.js
 ```
 
-```bash
+```bash 
 Scenario 4: Login as a “problem_user” to add a product item to the shopping cart and then complete
 the checkout workflow by logging in as a “performance_glitch_user”
 
@@ -52,7 +52,7 @@ Performance_glitch_user log into the application and completes the checkout work
 Testname: TC_04_checkoutWithPUandPGU.test.js
 ```
 
-```bash
+```bash 
 Scenario 5: Login as locked_out_user to verify error message and then Login as performance_glitch_user
 to add a product item to the cart and logout from the application.
 Login as a standard user now to complete the checkout workflow.
