@@ -117,7 +117,7 @@ Run tests in Parallel on all browsers (chrome, safari, edge and firefox)
 npm run test  - For tests only on all browsers
 ```
 
-#### Playwright Test Report
+#### Playwright Test Report 
 
 ```bash
 Html-test-report :
