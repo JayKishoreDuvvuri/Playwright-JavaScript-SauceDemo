@@ -1,14 +1,11 @@
-module.exports = {
-	title: '.title',
-	cartQuantityLabel: '.cart_quantity_label',
-	cartItemLabel: '.cart_item_label',
-	cartDescriptionLabel: '.cart_desc_label',
-	cartQuantity: '.cart_quantity',
-	flecceJacketText: "//div[@class='inventory_item_desc']",
-	fleeceJacketPrice: "//div[@class='inventory_item_price']",
-	continueShoppingButton: "[data-test='continue-shopping']",
-	removeButton: "[data-test='remove-sauce-labs-fleece-jacket']",
-	removeButtonTshirtRed:
-		"[data-test='remove-test.allthethings()-t-shirt-(red)']",
-	checkoutButton: "[data-test='checkout']"
-}
+export const title = '.title';
+export const cartQuantityLabel = '.cart_quantity_label';
+export const cartItemLabel = '.cart_item_label';
+export const cartDescriptionLabel = '.cart_desc_label';
+export const cartQuantity = '.cart_quantity';
+export const flecceJacketText = "//div[@class='inventory_item_desc']";
+export const fleeceJacketPrice = "//div[@class='inventory_item_price']";
+export const continueShoppingButton = "[data-test='continue-shopping']";
+export const removeButton = "[data-test='remove-sauce-labs-fleece-jacket']";
+export const removeButtonTshirtRed = "[data-test='remove-test.allthethings()-t-shirt-(red)']";
+export const checkoutButton = "[data-test='checkout']";
