@@ -20,7 +20,7 @@ page and logs out from the application. This is like a Smoke test.
 
 Testname: TC_01_productPage.test.js
 ```
-
+ 
 ```bash
 Scenario 2: Login as a standard user to complete the checkout workflow
 
@@ -117,7 +117,7 @@ Run tests in Parallel on all browsers (chrome, safari, edge and firefox)
 npm run test  - For tests only on all browsers
 ```
 
-#### Playwright Test Report
+#### Playwright Test Report 
 
 ```bash
 Html-test-report :
