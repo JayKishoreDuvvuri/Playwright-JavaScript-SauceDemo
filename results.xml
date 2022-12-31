@@ -1,41 +1,32 @@
-<testsuites id="" name="" tests="10" failures="0" skipped="0" errors="0" time="28.808070000000065">
-<testsuite name="TC_01_productPage.test.js" timestamp="1672493182574" hostname="" tests="5" failures="0" skipped="0" time="44.009" errors="0">
-<testcase name="@smoke: Login as a standard user to verify the products page and logout from the application Login to App as a standard user" classname="[Chrome] › TC_01_productPage.test.js › @smoke: Login as a standard user to verify the products page and logout from the application › Login to App as a standard user" time="11.225">
+<testsuites id="" name="" tests="10" failures="0" skipped="0" errors="0" time="22.73197800000012">
+<testsuite name="TC_01_productPage.test.js" timestamp="1672493330932" hostname="" tests="5" failures="0" skipped="0" time="38.003" errors="0">
+<testcase name="@smoke: Login as a standard user to verify the products page and logout from the application Login to App as a standard user" classname="[Chrome] › TC_01_productPage.test.js › @smoke: Login as a standard user to verify the products page and logout from the application › Login to App as a standard user" time="10.086">
 </testcase>
-<testcase name="@smoke: Login as a standard user to verify the products page and logout from the application Click on the &quot;About&quot; side nav bar link to check whether user is navigated to sauce labs page" classname="[Chrome] › TC_01_productPage.test.js › @smoke: Login as a standard user to verify the products page and logout from the application › Click on the &quot;About&quot; side nav bar link to check whether user is navigated to sauce labs page" time="10.249">
+<testcase name="@smoke: Login as a standard user to verify the products page and logout from the application Click on the &quot;About&quot; side nav bar link to check whether user is navigated to sauce labs page" classname="[Chrome] › TC_01_productPage.test.js › @smoke: Login as a standard user to verify the products page and logout from the application › Click on the &quot;About&quot; side nav bar link to check whether user is navigated to sauce labs page" time="7.834">
 </testcase>
-<testcase name="Verify All Social Channel Links Click on Facebook link and check whether user is navigated to Facebook page" classname="[Chrome] › TC_01_productPage.test.js › Verify All Social Channel Links › Click on Facebook link and check whether user is navigated to Facebook page" time="12.333">
-<system-out>
-<![CDATA[
-[[ATTACHMENT|../test-results/TC_01_productPage-Verify-All-Social-Channel-Li-e35c0-heck-whether-user-is-navigated-to-Facebook-page-Chrome/trace.zip]]
-
-[[ATTACHMENT|../test-results/TC_01_productPage-Verify-All-Social-Channel-Li-e35c0-heck-whether-user-is-navigated-to-Facebook-page-Chrome/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/TC_01_productPage-Verify-All-Social-Channel-Li-e35c0-heck-whether-user-is-navigated-to-Facebook-page-Chrome/test-failed-2.png]]
-]]>
-</system-out>
+<testcase name="Verify All Social Channel Links Click on Facebook link and check whether user is navigated to Facebook page" classname="[Chrome] › TC_01_productPage.test.js › Verify All Social Channel Links › Click on Facebook link and check whether user is navigated to Facebook page" time="7.409">
 </testcase>
-<testcase name="Verify All Social Channel Links Click on LinkedIn link and check whether user is navigated to LinkedIn page" classname="[Chrome] › TC_01_productPage.test.js › Verify All Social Channel Links › Click on LinkedIn link and check whether user is navigated to LinkedIn page" time="4.373">
+<testcase name="Verify All Social Channel Links Click on LinkedIn link and check whether user is navigated to LinkedIn page" classname="[Chrome] › TC_01_productPage.test.js › Verify All Social Channel Links › Click on LinkedIn link and check whether user is navigated to LinkedIn page" time="5.164">
 </testcase>
-<testcase name="Verify All Social Channel Links Click on Twitter link and check whether user is navigated to twitter page" classname="[Chrome] › TC_01_productPage.test.js › Verify All Social Channel Links › Click on Twitter link and check whether user is navigated to twitter page" time="5.829">
+<testcase name="Verify All Social Channel Links Click on Twitter link and check whether user is navigated to twitter page" classname="[Chrome] › TC_01_productPage.test.js › Verify All Social Channel Links › Click on Twitter link and check whether user is navigated to twitter page" time="7.51">
 </testcase>
 </testsuite>
-<testsuite name="TC_02_checkoutWorkflow.test.js" timestamp="1672493182574" hostname="" tests="1" failures="0" skipped="0" time="11.993" errors="0">
-<testcase name="Login as a standard user to complete the checkout workflow Login to App as a standard user" classname="[Chrome] › TC_02_checkoutWorkflow.test.js › Login as a standard user to complete the checkout workflow › Login to App as a standard user" time="11.993">
+<testsuite name="TC_02_checkoutWorkflow.test.js" timestamp="1672493330932" hostname="" tests="1" failures="0" skipped="0" time="8.915" errors="0">
+<testcase name="Login as a standard user to complete the checkout workflow Login to App as a standard user" classname="[Chrome] › TC_02_checkoutWorkflow.test.js › Login as a standard user to complete the checkout workflow › Login to App as a standard user" time="8.915">
 </testcase>
 </testsuite>
-<testsuite name="TC_03_checkoutWithSUandPGU.test.js" timestamp="1672493182574" hostname="" tests="1" failures="0" skipped="0" time="22.81" errors="0">
-<testcase name="Login as a Standard User to select a product item and then complete the checkout workflow with Performance Glitch User Login to App as a standard user" classname="[Chrome] › TC_03_checkoutWithSUandPGU.test.js › Login as a Standard User to select a product item and then complete the checkout workflow with Performance Glitch User › Login to App as a standard user" time="22.81">
+<testsuite name="TC_03_checkoutWithSUandPGU.test.js" timestamp="1672493330932" hostname="" tests="1" failures="0" skipped="0" time="20.316" errors="0">
+<testcase name="Login as a Standard User to select a product item and then complete the checkout workflow with Performance Glitch User Login to App as a standard user" classname="[Chrome] › TC_03_checkoutWithSUandPGU.test.js › Login as a Standard User to select a product item and then complete the checkout workflow with Performance Glitch User › Login to App as a standard user" time="20.316">
 </testcase>
 </testsuite>
-<testsuite name="TC_04_checkoutWithPUandPGU.test.js" timestamp="1672493182574" hostname="" tests="1" failures="0" skipped="0" time="19.974" errors="0">
-<testcase name="Login as a Problem user to select a product item and then complete the checkout workflow with Performance Glitch User Login to App as a problem user" classname="[Chrome] › TC_04_checkoutWithPUandPGU.test.js › Login as a Problem user to select a product item and then complete the checkout workflow with Performance Glitch User › Login to App as a problem user" time="19.974">
+<testsuite name="TC_04_checkoutWithPUandPGU.test.js" timestamp="1672493330932" hostname="" tests="1" failures="0" skipped="0" time="19.155" errors="0">
+<testcase name="Login as a Problem user to select a product item and then complete the checkout workflow with Performance Glitch User Login to App as a problem user" classname="[Chrome] › TC_04_checkoutWithPUandPGU.test.js › Login as a Problem user to select a product item and then complete the checkout workflow with Performance Glitch User › Login to App as a problem user" time="19.155">
 </testcase>
 </testsuite>
-<testsuite name="TC_05_checkoutWithPGUandSU.test.js" timestamp="1672493182574" hostname="" tests="2" failures="0" skipped="0" time="12.067" errors="0">
-<testcase name="Login as a Locked out user and Performance glitch user and complete the checkout workflow with Standard user Login to App as a Locked out user user" classname="[Chrome] › TC_05_checkoutWithPGUandSU.test.js › Login as a Locked out user and Performance glitch user and complete the checkout workflow with Standard user › Login to App as a Locked out user user" time="2.259">
+<testsuite name="TC_05_checkoutWithPGUandSU.test.js" timestamp="1672493330932" hostname="" tests="2" failures="0" skipped="0" time="11.996" errors="0">
+<testcase name="Login as a Locked out user and Performance glitch user and complete the checkout workflow with Standard user Login to App as a Locked out user user" classname="[Chrome] › TC_05_checkoutWithPGUandSU.test.js › Login as a Locked out user and Performance glitch user and complete the checkout workflow with Standard user › Login to App as a Locked out user user" time="1.782">
 </testcase>
-<testcase name="Login as a Locked out user and Performance glitch user and complete the checkout workflow with Standard user Login to App as a Performance glitch user" classname="[Chrome] › TC_05_checkoutWithPGUandSU.test.js › Login as a Locked out user and Performance glitch user and complete the checkout workflow with Standard user › Login to App as a Performance glitch user" time="9.808">
+<testcase name="Login as a Locked out user and Performance glitch user and complete the checkout workflow with Standard user Login to App as a Performance glitch user" classname="[Chrome] › TC_05_checkoutWithPGUandSU.test.js › Login as a Locked out user and Performance glitch user and complete the checkout workflow with Standard user › Login to App as a Performance glitch user" time="10.214">
 </testcase>
 </testsuite>
 </testsuites>
