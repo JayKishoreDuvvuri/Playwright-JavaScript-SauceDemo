@@ -12,6 +12,7 @@ tests:
         when: always
         paths:
             - playwright-report/
+            - allure-report/
             - results.xml
         reports:
             junit: results.xml

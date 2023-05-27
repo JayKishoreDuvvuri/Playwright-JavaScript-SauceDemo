@@ -1,0 +1,395 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "Login to App as a standard user",
+    "uid" : "1f3757d2c6aeb725",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1653339695164,
+      "stop" : 1653339736746,
+      "duration" : 41582
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Click on the \"About\" side nav bar link to check whether user is navigated to sauce labs page",
+    "uid" : "52209c31ebd542f9",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1653339446108,
+      "stop" : 1653339453987,
+      "duration" : 7879
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Click on Facebook link and check whether user is navigated to Facebook page",
+    "uid" : "4c2ce4d02ef68340",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1653339518601,
+      "stop" : 1653339524717,
+      "duration" : 6116
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Login to App as a problem user",
+    "uid" : "464208269ffe945c",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1653339695161,
+      "stop" : 1653339726947,
+      "duration" : 31786
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Login to App as a standard user",
+    "uid" : "cf0205a3ad6b5b32",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1653339518605,
+      "stop" : 1653339530948,
+      "duration" : 12343
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Click on Facebook link and check whether user is navigated to Facebook page",
+    "uid" : "3f5c5df886267930",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1653339695140,
+      "stop" : 1653339713307,
+      "duration" : 18167
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Login to App as a Locked out user user",
+    "uid" : "64f82c503daacc1e",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1653339714125,
+      "stop" : 1653339719116,
+      "duration" : 4991
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Click on Twitter link and check whether user is navigated to twitter page",
+    "uid" : "1565d0f47d98e3dd",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1653339468603,
+      "stop" : 1653339479610,
+      "duration" : 11007
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Login to App as a standard user",
+    "uid" : "7c8cac08a878806e",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1653339446092,
+      "stop" : 1653339459102,
+      "duration" : 13010
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Click on Twitter link and check whether user is navigated to twitter page",
+    "uid" : "67791970c8724abc",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1653339722617,
+      "stop" : 1653339728461,
+      "duration" : 5844
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Click on LinkedIn link and check whether user is navigated to LinkedIn page",
+    "uid" : "f6ceaa9dc9e39402",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1653339713309,
+      "stop" : 1653339722617,
+      "duration" : 9308
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Click on Twitter link and check whether user is navigated to twitter page",
+    "uid" : "6e25e2c92c285f25",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1653339540078,
+      "stop" : 1653339551026,
+      "duration" : 10948
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Click on LinkedIn link and check whether user is navigated to LinkedIn page",
+    "uid" : "8fb25bcc38a6a474",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1653339524718,
+      "stop" : 1653339540078,
+      "duration" : 15360
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Login to App as a Performance glitch user",
+    "uid" : "168cedf2495347f7",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1653339719111,
+      "stop" : 1653339734580,
+      "duration" : 15469
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Click on Facebook link and check whether user is navigated to Facebook page",
+    "uid" : "23fe2844b58f5bf0",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1653339446086,
+      "stop" : 1653339453185,
+      "duration" : 7099
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Login to App as a Performance glitch user",
+    "uid" : "f38779fb797fe81e",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1653339529857,
+      "stop" : 1653339541758,
+      "duration" : 11901
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Login to App as a problem user",
+    "uid" : "f6ba926668c6a483",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1653339446117,
+      "stop" : 1653339468876,
+      "duration" : 22759
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Click on the \"About\" side nav bar link to check whether user is navigated to sauce labs page",
+    "uid" : "321b3194acf74400",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1653339518600,
+      "stop" : 1653339527265,
+      "duration" : 8665
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Login to App as a Locked out user user",
+    "uid" : "d22abfe0523e8129",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1653339453995,
+      "stop" : 1653339456894,
+      "duration" : 2899
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Click on the \"About\" side nav bar link to check whether user is navigated to sauce labs page",
+    "uid" : "b6096719d5d684b",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1653339695141,
+      "stop" : 1653339714112,
+      "duration" : 18971
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Login to App as a standard user",
+    "uid" : "8f325f59297413d6",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1653339518630,
+      "stop" : 1653339547222,
+      "duration" : 28592
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Login to App as a standard user",
+    "uid" : "d760a2f2f3cd75f0",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1653339446098,
+      "stop" : 1653339476288,
+      "duration" : 30190
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Login to App as a Performance glitch user",
+    "uid" : "fd5ee28bb6c6b1a3",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1653339456896,
+      "stop" : 1653339468912,
+      "duration" : 12016
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Login to App as a standard user",
+    "uid" : "c34ba7f55d59b22b",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1653339695144,
+      "stop" : 1653339722397,
+      "duration" : 27253
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Click on LinkedIn link and check whether user is navigated to LinkedIn page",
+    "uid" : "bba16ed74c8eea6",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1653339453186,
+      "stop" : 1653339468602,
+      "duration" : 15416
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Login to App as a problem user",
+    "uid" : "dbb1983a4093a880",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1653339518619,
+      "stop" : 1653339539669,
+      "duration" : 21050
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Login to App as a standard user",
+    "uid" : "8846de51800d5c8",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1653339446101,
+      "stop" : 1653339462195,
+      "duration" : 16094
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Login to App as a Locked out user user",
+    "uid" : "603d7e0eab063130",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1653339527268,
+      "stop" : 1653339529856,
+      "duration" : 2588
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Login to App as a standard user",
+    "uid" : "56c73cd39b3dd0d8",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1653339695143,
+      "stop" : 1653339719089,
+      "duration" : 23946
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Login to App as a standard user",
+    "uid" : "6744675318a552d4",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1653339518608,
+      "stop" : 1653339533676,
+      "duration" : 15068
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  } ]
+}

@@ -38,10 +38,8 @@
   "license": "ISC",
   "dependencies": {
     "@playwright/test": "^1.29.1",
+    "allure-playwright": "^2.4.0",
     "fs": "^0.0.1-security",
     "prettier": "^2.6.2"
-  },
-  "devDependencies": {
-    "allure-playwright": "^2.0.0-beta.16"
   }
 }

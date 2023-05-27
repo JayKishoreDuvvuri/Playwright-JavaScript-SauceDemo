@@ -1,0 +1,361 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "WebKit",
+    "children" : [ {
+      "name" : "TC_01_productPage.test.js",
+      "children" : [ {
+        "name" : "@smoke: Login as a standard user to verify the products page and logout from the application",
+        "children" : [ {
+          "name" : "Click on the \"About\" side nav bar link to check whether user is navigated to sauce labs page",
+          "uid" : "321b3194acf74400",
+          "parentUid" : "2eff3c5f90a4c8c5ffbe13ad55891d2f",
+          "status" : "passed",
+          "time" : {
+            "start" : 1653339518600,
+            "stop" : 1653339527265,
+            "duration" : 8665
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Login to App as a standard user",
+          "uid" : "cf0205a3ad6b5b32",
+          "parentUid" : "2eff3c5f90a4c8c5ffbe13ad55891d2f",
+          "status" : "passed",
+          "time" : {
+            "start" : 1653339518605,
+            "stop" : 1653339530948,
+            "duration" : 12343
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "2eff3c5f90a4c8c5ffbe13ad55891d2f"
+      }, {
+        "name" : "Verify All Social Channel Links",
+        "children" : [ {
+          "name" : "Click on Facebook link and check whether user is navigated to Facebook page",
+          "uid" : "4c2ce4d02ef68340",
+          "parentUid" : "9cef4abfb6b2abb785052dbb7ce8e8e7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1653339518601,
+            "stop" : 1653339524717,
+            "duration" : 6116
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Click on LinkedIn link and check whether user is navigated to LinkedIn page",
+          "uid" : "8fb25bcc38a6a474",
+          "parentUid" : "9cef4abfb6b2abb785052dbb7ce8e8e7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1653339524718,
+            "stop" : 1653339540078,
+            "duration" : 15360
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Click on Twitter link and check whether user is navigated to twitter page",
+          "uid" : "6e25e2c92c285f25",
+          "parentUid" : "9cef4abfb6b2abb785052dbb7ce8e8e7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1653339540078,
+            "stop" : 1653339551026,
+            "duration" : 10948
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "9cef4abfb6b2abb785052dbb7ce8e8e7"
+      } ],
+      "uid" : "b7d12a451bea6b9490d8782a5e3eaac3"
+    }, {
+      "name" : "TC_02_checkoutWorkflow.test.js",
+      "children" : [ {
+        "name" : "Login as a standard user to complete the checkout workflow",
+        "children" : [ {
+          "name" : "Login to App as a standard user",
+          "uid" : "6744675318a552d4",
+          "parentUid" : "f0a553ee14de112282a712a8c4559342",
+          "status" : "passed",
+          "time" : {
+            "start" : 1653339518608,
+            "stop" : 1653339533676,
+            "duration" : 15068
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "f0a553ee14de112282a712a8c4559342"
+      } ],
+      "uid" : "34f80522be9ed912c22dbd1bef82e4a4"
+    }, {
+      "name" : "TC_04_checkoutWithPUandPGU.test.js",
+      "children" : [ {
+        "name" : "Login as a Problem user to select a product item and then complete the checkout workflow with Performance Glitch User",
+        "children" : [ {
+          "name" : "Login to App as a problem user",
+          "uid" : "dbb1983a4093a880",
+          "parentUid" : "a619be93bc2d8bcc89fcea0709a9252a",
+          "status" : "passed",
+          "time" : {
+            "start" : 1653339518619,
+            "stop" : 1653339539669,
+            "duration" : 21050
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "a619be93bc2d8bcc89fcea0709a9252a"
+      } ],
+      "uid" : "c16a4fe9db67f71dc20acecb415632e9"
+    }, {
+      "name" : "TC_03_checkoutWithSUandPGU.test.js",
+      "children" : [ {
+        "name" : "Login as a Standard User to select a product item and then complete the checkout workflow with Performance Glitch User",
+        "children" : [ {
+          "name" : "Login to App as a standard user",
+          "uid" : "8f325f59297413d6",
+          "parentUid" : "9cfc0268a3af149828237e73261241d1",
+          "status" : "passed",
+          "time" : {
+            "start" : 1653339518630,
+            "stop" : 1653339547222,
+            "duration" : 28592
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "9cfc0268a3af149828237e73261241d1"
+      } ],
+      "uid" : "7dc0a911072a06d885fb26bcbffb3bae"
+    }, {
+      "name" : "TC_05_checkoutWithPGUandSU.test.js",
+      "children" : [ {
+        "name" : "Login as a Locked out user and Performance glitch user and complete the checkout workflow with Standard user",
+        "children" : [ {
+          "name" : "Login to App as a Locked out user user",
+          "uid" : "603d7e0eab063130",
+          "parentUid" : "4811a7fea31bd1454a786dcf5fb44265",
+          "status" : "passed",
+          "time" : {
+            "start" : 1653339527268,
+            "stop" : 1653339529856,
+            "duration" : 2588
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Login to App as a Performance glitch user",
+          "uid" : "f38779fb797fe81e",
+          "parentUid" : "4811a7fea31bd1454a786dcf5fb44265",
+          "status" : "passed",
+          "time" : {
+            "start" : 1653339529857,
+            "stop" : 1653339541758,
+            "duration" : 11901
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "4811a7fea31bd1454a786dcf5fb44265"
+      } ],
+      "uid" : "602f7c86cb06f14d40aac7bcd2de1488"
+    } ],
+    "uid" : "40c7f007303ba53f0be12d4bae6a4c47"
+  }, {
+    "name" : "Firefox",
+    "children" : [ {
+      "name" : "TC_01_productPage.test.js",
+      "children" : [ {
+        "name" : "Verify All Social Channel Links",
+        "children" : [ {
+          "name" : "Click on Facebook link and check whether user is navigated to Facebook page",
+          "uid" : "3f5c5df886267930",
+          "parentUid" : "d9c32de7433745552f82265e8099c3ab",
+          "status" : "passed",
+          "time" : {
+            "start" : 1653339695140,
+            "stop" : 1653339713307,
+            "duration" : 18167
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Click on LinkedIn link and check whether user is navigated to LinkedIn page",
+          "uid" : "f6ceaa9dc9e39402",
+          "parentUid" : "d9c32de7433745552f82265e8099c3ab",
+          "status" : "passed",
+          "time" : {
+            "start" : 1653339713309,
+            "stop" : 1653339722617,
+            "duration" : 9308
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Click on Twitter link and check whether user is navigated to twitter page",
+          "uid" : "67791970c8724abc",
+          "parentUid" : "d9c32de7433745552f82265e8099c3ab",
+          "status" : "passed",
+          "time" : {
+            "start" : 1653339722617,
+            "stop" : 1653339728461,
+            "duration" : 5844
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "d9c32de7433745552f82265e8099c3ab"
+      }, {
+        "name" : "@smoke: Login as a standard user to verify the products page and logout from the application",
+        "children" : [ {
+          "name" : "Click on the \"About\" side nav bar link to check whether user is navigated to sauce labs page",
+          "uid" : "b6096719d5d684b",
+          "parentUid" : "26bcdabb083c04877f70acdb83810189",
+          "status" : "passed",
+          "time" : {
+            "start" : 1653339695141,
+            "stop" : 1653339714112,
+            "duration" : 18971
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Login to App as a standard user",
+          "uid" : "56c73cd39b3dd0d8",
+          "parentUid" : "26bcdabb083c04877f70acdb83810189",
+          "status" : "passed",
+          "time" : {
+            "start" : 1653339695143,
+            "stop" : 1653339719089,
+            "duration" : 23946
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "26bcdabb083c04877f70acdb83810189"
+      } ],
+      "uid" : "c6eec7aee5baeb483860b3c39716affc"
+    }, {
+      "name" : "TC_02_checkoutWorkflow.test.js",
+      "children" : [ {
+        "name" : "Login as a standard user to complete the checkout workflow",
+        "children" : [ {
+          "name" : "Login to App as a standard user",
+          "uid" : "c34ba7f55d59b22b",
+          "parentUid" : "f4b1b0d94439eec15ac9bed36efd7706",
+          "status" : "passed",
+          "time" : {
+            "start" : 1653339695144,
+            "stop" : 1653339722397,
+            "duration" : 27253
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "f4b1b0d94439eec15ac9bed36efd7706"
+      } ],
+      "uid" : "f97bfd5a95cf141fd43ffa4ccb404a3d"
+    }, {
+      "name" : "TC_04_checkoutWithPUandPGU.test.js",
+      "children" : [ {
+        "name" : "Login as a Problem user to select a product item and then complete the checkout workflow with Performance Glitch User",
+        "children" : [ {
+          "name" : "Login to App as a problem user",
+          "uid" : "464208269ffe945c",
+          "parentUid" : "e786ca65e8f1193aff6eeeb04a0c6ffa",
+          "status" : "passed",
+          "time" : {
+            "start" : 1653339695161,
+            "stop" : 1653339726947,
+            "duration" : 31786
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "e786ca65e8f1193aff6eeeb04a0c6ffa"
+      } ],
+      "uid" : "7b0ed55af11c10d41e4f5fe0d2a08f66"
+    }, {
+      "name" : "TC_03_checkoutWithSUandPGU.test.js",
+      "children" : [ {
+        "name" : "Login as a Standard User to select a product item and then complete the checkout workflow with Performance Glitch User",
+        "children" : [ {
+          "name" : "Login to App as a standard user",
+          "uid" : "1f3757d2c6aeb725",
+          "parentUid" : "52eb4285a27416df7133257c4b5379e0",
+          "status" : "passed",
+          "time" : {
+            "start" : 1653339695164,
+            "stop" : 1653339736746,
+            "duration" : 41582
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "52eb4285a27416df7133257c4b5379e0"
+      } ],
+      "uid" : "ed040cbad08e69684cfc4d92183dbb07"
+    }, {
+      "name" : "TC_05_checkoutWithPGUandSU.test.js",
+      "children" : [ {
+        "name" : "Login as a Locked out user and Performance glitch user and complete the checkout workflow with Standard user",
+        "children" : [ {
+          "name" : "Login to App as a Locked out user user",
+          "uid" : "64f82c503daacc1e",
+          "parentUid" : "d9963a046c4232de955da5a1cff02aad",
+          "status" : "passed",
+          "time" : {
+            "start" : 1653339714125,
+            "stop" : 1653339719116,
+            "duration" : 4991
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "Login to App as a Performance glitch user",
+          "uid" : "168cedf2495347f7",
+          "parentUid" : "d9963a046c4232de955da5a1cff02aad",
+          "status" : "passed",
+          "time" : {
+            "start" : 1653339719111,
+            "stop" : 1653339734580,
+            "duration" : 15469
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "d9963a046c4232de955da5a1cff02aad"
+      } ],
+      "uid" : "cb0712e35c1a9389a38c8a9b147400b4"
+    } ],
+    "uid" : "766b375f9458bb5fe1565ec8c36ca147"
+  } ]
+}
