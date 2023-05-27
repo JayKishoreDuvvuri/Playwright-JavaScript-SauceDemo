@@ -2,7 +2,7 @@ stages:
   - Regression-Tests
   - Test-Report
 
-tests:
+Regression-Tests:
   stage: Regression-Tests
   image: mcr.microsoft.com/playwright:v1.22.0-focal
   script:
@@ -15,7 +15,7 @@ tests:
             - allure-results/
 
   
-  Test-Report:
+Test-Report:
   stage: Test-Report
   artifacts:
     paths:
