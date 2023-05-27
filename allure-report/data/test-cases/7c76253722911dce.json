@@ -1,0 +1,541 @@
+{
+  "uid" : "7c76253722911dce",
+  "name" : "Login to App as a standard user",
+  "fullName" : "TC_03_checkoutWithSUandPGU.test.js#Login as a Standard User to select a product item and then complete the checkout workflow with Performance Glitch User Login to App as a standard user",
+  "historyId" : "7875bab77e7348f0824e95c7a859a01d:c42e4eb120398df7b1640a5725c5d83a",
+  "time" : {
+    "start" : 1685195885828,
+    "stop" : 1685195951591,
+    "duration" : 65763
+  },
+  "status" : "broken",
+  "statusMessage" : "Test timeout of 60000ms exceeded.",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "Test timeout of 60000ms exceeded.",
+    "steps" : [ {
+      "name" : "Before Hooks",
+      "time" : {
+        "start" : 1685195885829,
+        "stop" : 1685195888604,
+        "duration" : 2775
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "browserContext.newPage",
+        "time" : {
+          "start" : 1685195887132,
+          "stop" : 1685195888603,
+          "duration" : 1471
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Open the APP and check logo",
+      "time" : {
+        "start" : 1685195888604,
+        "stop" : 1685195891036,
+        "duration" : 2432
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "page.goto(https://www.saucedemo.com/)",
+        "time" : {
+          "start" : 1685195888619,
+          "stop" : 1685195890155,
+          "duration" : 1536
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "page.waitForLoadState",
+        "time" : {
+          "start" : 1685195890163,
+          "stop" : 1685195890483,
+          "duration" : 320
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "page.waitForSelector(.login_logo)",
+        "time" : {
+          "start" : 1685195890483,
+          "stop" : 1685195890810,
+          "duration" : 327
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "locator.isVisible(.login_logo)",
+        "time" : {
+          "start" : 1685195890812,
+          "stop" : 1685195891026,
+          "duration" : 214
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "expect.toBeTruthy",
+        "time" : {
+          "start" : 1685195891028,
+          "stop" : 1685195891029,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "page.title",
+        "time" : {
+          "start" : 1685195891031,
+          "stop" : 1685195891033,
+          "duration" : 2
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "expect.toBe",
+        "time" : {
+          "start" : 1685195891034,
+          "stop" : 1685195891034,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "expect.toContain",
+        "time" : {
+          "start" : 1685195891035,
+          "stop" : 1685195891035,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 8,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Login as a Standard user",
+      "time" : {
+        "start" : 1685195891036,
+        "stop" : 1685195892503,
+        "duration" : 1467
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "page.waitForSelector([data-test='username'])",
+        "time" : {
+          "start" : 1685195891037,
+          "stop" : 1685195891250,
+          "duration" : 213
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "page.fill([data-test='username'])",
+        "time" : {
+          "start" : 1685195891251,
+          "stop" : 1685195891487,
+          "duration" : 236
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "page.waitForSelector([data-test='password'])",
+        "time" : {
+          "start" : 1685195891488,
+          "stop" : 1685195891708,
+          "duration" : 220
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "page.fill([data-test='password'])",
+        "time" : {
+          "start" : 1685195891709,
+          "stop" : 1685195891981,
+          "duration" : 272
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "page.waitForSelector([data-test='login-button'])",
+        "time" : {
+          "start" : 1685195891981,
+          "stop" : 1685195892197,
+          "duration" : 216
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "page.click([data-test='login-button'])",
+        "time" : {
+          "start" : 1685195892198,
+          "stop" : 1685195892503,
+          "duration" : 305
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 6,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Verify landing page logo+title+image+url visible",
+      "time" : {
+        "start" : 1685195892503,
+        "stop" : 1685195948222,
+        "duration" : 55719
+      },
+      "status" : "failed",
+      "statusMessage" : "page.waitForSelector: Target closed\n=========================== logs ===========================\nwaiting for locator('.peek') to be visible\n============================================================",
+      "statusTrace" : "page.waitForSelector: Target closed\n=========================== logs ===========================\nwaiting for locator('.peek') to be visible\n============================================================\n    at ProductsPage.isElementVisible (/Users/Jay/Workspace/Playwright/Playwright-JavaScript-SauceDemo-Latest/pages/basePage.js:109:19)\n    at ProductsPage.verifyPeekImage (/Users/Jay/Workspace/Playwright/Playwright-JavaScript-SauceDemo-Latest/pages/productsPage.js:75:21)\n    at /Users/Jay/Workspace/Playwright/Playwright-JavaScript-SauceDemo-Latest/tests/TC_03_checkoutWithSUandPGU.test.js:112:23\n    at /Users/Jay/Workspace/Playwright/Playwright-JavaScript-SauceDemo-Latest/tests/TC_03_checkoutWithSUandPGU.test.js:109:3",
+      "steps" : [ {
+        "name" : "page.waitForSelector(.app_logo)",
+        "time" : {
+          "start" : 1685195892507,
+          "stop" : 1685195892721,
+          "duration" : 214
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "locator.isVisible(.app_logo)",
+        "time" : {
+          "start" : 1685195892722,
+          "stop" : 1685195892950,
+          "duration" : 228
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "expect.toBeTruthy",
+        "time" : {
+          "start" : 1685195892951,
+          "stop" : 1685195892951,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "page.waitForSelector(.title)",
+        "time" : {
+          "start" : 1685195892952,
+          "stop" : 1685195893171,
+          "duration" : 219
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "locator.isVisible(.title)",
+        "time" : {
+          "start" : 1685195893172,
+          "stop" : 1685195893379,
+          "duration" : 207
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "expect.toBeTruthy",
+        "time" : {
+          "start" : 1685195893380,
+          "stop" : 1685195893380,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "page.waitForSelector(.peek)",
+        "time" : {
+          "start" : 1685195893381,
+          "stop" : 1685195948222,
+          "duration" : 54841
+        },
+        "status" : "failed",
+        "statusMessage" : "page.waitForSelector: Target closed\n=========================== logs ===========================\nwaiting for locator('.peek') to be visible\n============================================================",
+        "statusTrace" : "page.waitForSelector: Target closed\n=========================== logs ===========================\nwaiting for locator('.peek') to be visible\n============================================================\n    at ProductsPage.isElementVisible (/Users/Jay/Workspace/Playwright/Playwright-JavaScript-SauceDemo-Latest/pages/basePage.js:109:19)\n    at ProductsPage.verifyPeekImage (/Users/Jay/Workspace/Playwright/Playwright-JavaScript-SauceDemo-Latest/pages/productsPage.js:75:21)\n    at /Users/Jay/Workspace/Playwright/Playwright-JavaScript-SauceDemo-Latest/tests/TC_03_checkoutWithSUandPGU.test.js:112:23\n    at /Users/Jay/Workspace/Playwright/Playwright-JavaScript-SauceDemo-Latest/tests/TC_03_checkoutWithSUandPGU.test.js:109:3",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : true,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 7,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "After Hooks",
+      "time" : {
+        "start" : 1685195946958,
+        "stop" : 1685195951561,
+        "duration" : 4603
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Screenshot on failure",
+        "time" : {
+          "start" : 1685195946958,
+          "stop" : 1685195947244,
+          "duration" : 286
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "page.screenshot",
+          "time" : {
+            "start" : 1685195946960,
+            "stop" : 1685195947242,
+            "duration" : 282
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "browserContext.close",
+        "time" : {
+          "start" : 1685195948012,
+          "stop" : 1685195951131,
+          "duration" : 3119
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 3,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "bc9033ea081f5b07",
+      "name" : "video",
+      "source" : "bc9033ea081f5b07.webm",
+      "type" : "video/webm",
+      "size" : 388881
+    }, {
+      "uid" : "a619c4359df87a6e",
+      "name" : "trace",
+      "source" : "a619c4359df87a6e.zip",
+      "type" : "application/zip",
+      "size" : 15678211
+    }, {
+      "uid" : "b2087dde7a46f2bc",
+      "name" : "screenshot",
+      "source" : "b2087dde7a46f2bc.png",
+      "type" : "image/png",
+      "size" : 451964
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 30,
+    "attachmentsCount" : 3,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "titlePath",
+    "value" : " > Firefox > TC_03_checkoutWithSUandPGU.test.js > Login as a Standard User to select a product item and then complete the checkout workflow with Performance Glitch User"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Firefox"
+  }, {
+    "name" : "suite",
+    "value" : "TC_03_checkoutWithSUandPGU.test.js"
+  }, {
+    "name" : "subSuite",
+    "value" : "Login as a Standard User to select a product item and then complete the checkout workflow with Performance Glitch User"
+  }, {
+    "name" : "host",
+    "value" : "Jay-MacBook-Pro"
+  }, {
+    "name" : "thread",
+    "value" : "Jay-MacBook-Pro-35294-playwright-worker-4"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "Project",
+    "value" : "Firefox"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "7c76253722911dce.json",
+  "parameterValues" : [ "Firefox" ]
+}

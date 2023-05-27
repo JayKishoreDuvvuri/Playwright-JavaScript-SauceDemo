@@ -1,0 +1,15 @@
+{
+  "total" : 1,
+  "items" : [ {
+    "uid" : "766b375f9458bb5fe1565ec8c36ca147",
+    "name" : "Firefox",
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 3,
+      "skipped" : 0,
+      "passed" : 6,
+      "unknown" : 0,
+      "total" : 10
+    }
+  } ]
+}

@@ -1,0 +1,242 @@
+<testsuites id="" name="" tests="10" failures="4" skipped="0" errors="0" time="68.71967100000009">
+<testsuite name="TC_01_productPage.test.js" timestamp="1685195731683" hostname="" tests="5" failures="2" skipped="0" time="88.681" errors="0">
+<testcase name="@smoke: Login as a standard user to verify the products page and logout from the application Login to App as a standard user" classname="[Firefox] › TC_01_productPage.test.js › @smoke: Login as a standard user to verify the products page and logout from the application › Login to App as a standard user" time="60">
+<failure message="TC_01_productPage.test.js:57:7 Login to App as a standard user" type="FAILURE">
+<![CDATA[  [Firefox] › TC_01_productPage.test.js:57:7 › @smoke: Login as a standard user to verify the products page and logout from the application › Login to App as a standard user 
+
+    Test timeout of 60000ms exceeded.
+
+    page.waitForSelector: Target closed
+    =========================== logs ===========================
+    waiting for locator('.bot_column') to be visible
+    ============================================================
+
+       at ../pages/basePage.js:125
+
+      123 |
+      124 | 	async isElementEnabled(selector, errorMessage) {
+    > 125 | 		await this.page.waitForSelector(selector)
+          | 		                ^
+      126 | 		const element = this.page.locator(selector)
+      127 | 		try {
+      128 | 			const isEnabled = await element.isEnabled()
+
+        at LoginPage.isElementEnabled (/Users/Jay/Workspace/Playwright/Playwright-JavaScript-SauceDemo-Latest/pages/basePage.js:125:19)
+        at LoginPage.botImageVisible (/Users/Jay/Workspace/Playwright/Playwright-JavaScript-SauceDemo-Latest/pages/loginPage.js:45:21)
+        at /Users/Jay/Workspace/Playwright/Playwright-JavaScript-SauceDemo-Latest/tests/TC_01_productPage.test.js:80:22
+        at /Users/Jay/Workspace/Playwright/Playwright-JavaScript-SauceDemo-Latest/tests/TC_01_productPage.test.js:76:4
+
+    Pending operations:
+      - page.waitForSelector at pages/basePage.js:125:19
+
+
+    attachment #1: video (video/webm) --------------------------------------------------------------
+    test-results/TC_01_productPage--smoke-Login-as-a-standard-u-be920-the-application-Login-to-App-as-a-standard-user-Firefox/video.webm
+    ------------------------------------------------------------------------------------------------
+
+    attachment #2: trace (application/zip) ---------------------------------------------------------
+    test-results/TC_01_productPage--smoke-Login-as-a-standard-u-be920-the-application-Login-to-App-as-a-standard-user-Firefox/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/TC_01_productPage--smoke-Login-as-a-standard-u-be920-the-application-Login-to-App-as-a-standard-user-Firefox/trace.zip
+
+    ------------------------------------------------------------------------------------------------
+
+    attachment #3: screenshot (image/png) ----------------------------------------------------------
+    test-results/TC_01_productPage--smoke-Login-as-a-standard-u-be920-the-application-Login-to-App-as-a-standard-user-Firefox/test-failed-1.png
+    ------------------------------------------------------------------------------------------------
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/TC_01_productPage--smoke-Login-as-a-standard-u-be920-the-application-Login-to-App-as-a-standard-user-Firefox/video.webm]]
+
+[[ATTACHMENT|../test-results/TC_01_productPage--smoke-Login-as-a-standard-u-be920-the-application-Login-to-App-as-a-standard-user-Firefox/trace.zip]]
+
+[[ATTACHMENT|../test-results/TC_01_productPage--smoke-Login-as-a-standard-u-be920-the-application-Login-to-App-as-a-standard-user-Firefox/test-failed-1.png]]
+]]>
+</system-out>
+</testcase>
+<testcase name="@smoke: Login as a standard user to verify the products page and logout from the application Click on the &quot;About&quot; side nav bar link to check whether user is navigated to sauce labs page" classname="[Firefox] › TC_01_productPage.test.js › @smoke: Login as a standard user to verify the products page and logout from the application › Click on the &quot;About&quot; side nav bar link to check whether user is navigated to sauce labs page" time="12.361">
+<failure message="TC_01_productPage.test.js:180:7 Click on the &quot;About&quot; side nav bar link to check whether user is navigated to sauce labs page" type="FAILURE">
+<![CDATA[  [Firefox] › TC_01_productPage.test.js:180:7 › @smoke: Login as a standard user to verify the products page and logout from the application › Click on the "About" side nav bar link to check whether user is navigated to sauce labs page 
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "Cross Browser Testing, Selenium Testing, Mobile Testing | Sauce Labs"
+    Received: "Sauce Labs: Cross Browser Testing, Selenium Testing & Mobile Testing"
+
+      189 | 					await productsPage.burgerButtonClick()
+      190 | 					await productsPage.clickAboutSideBarLink()
+    > 191 | 					expect(await productsPage.getTitle()).toBe(sauceLabsTitle)
+          | 					                                      ^
+      192 | 					expect(await productsPage.getUrl()).toContain(sauceLabsUrl)
+      193 | 				}
+      194 | 			)
+
+        at /Users/Jay/Workspace/Playwright/Playwright-JavaScript-SauceDemo-Latest/tests/TC_01_productPage.test.js:191:44
+        at /Users/Jay/Workspace/Playwright/Playwright-JavaScript-SauceDemo-Latest/tests/TC_01_productPage.test.js:184:4
+
+    attachment #1: video (video/webm) --------------------------------------------------------------
+    test-results/TC_01_productPage--smoke-Login-as-a-standard-u-1c23d-ck-whether-user-is-navigated-to-sauce-labs-page-Firefox/video.webm
+    ------------------------------------------------------------------------------------------------
+
+    attachment #2: trace (application/zip) ---------------------------------------------------------
+    test-results/TC_01_productPage--smoke-Login-as-a-standard-u-1c23d-ck-whether-user-is-navigated-to-sauce-labs-page-Firefox/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/TC_01_productPage--smoke-Login-as-a-standard-u-1c23d-ck-whether-user-is-navigated-to-sauce-labs-page-Firefox/trace.zip
+
+    ------------------------------------------------------------------------------------------------
+
+    attachment #3: screenshot (image/png) ----------------------------------------------------------
+    test-results/TC_01_productPage--smoke-Login-as-a-standard-u-1c23d-ck-whether-user-is-navigated-to-sauce-labs-page-Firefox/test-failed-1.png
+    ------------------------------------------------------------------------------------------------
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/TC_01_productPage--smoke-Login-as-a-standard-u-1c23d-ck-whether-user-is-navigated-to-sauce-labs-page-Firefox/video.webm]]
+
+[[ATTACHMENT|../test-results/TC_01_productPage--smoke-Login-as-a-standard-u-1c23d-ck-whether-user-is-navigated-to-sauce-labs-page-Firefox/trace.zip]]
+
+[[ATTACHMENT|../test-results/TC_01_productPage--smoke-Login-as-a-standard-u-1c23d-ck-whether-user-is-navigated-to-sauce-labs-page-Firefox/test-failed-1.png]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Verify All Social Channel Links Click on Facebook link and check whether user is navigated to Facebook page" classname="[Firefox] › TC_01_productPage.test.js › Verify All Social Channel Links › Click on Facebook link and check whether user is navigated to Facebook page" time="6.153">
+</testcase>
+<testcase name="Verify All Social Channel Links Click on LinkedIn link and check whether user is navigated to LinkedIn page" classname="[Firefox] › TC_01_productPage.test.js › Verify All Social Channel Links › Click on LinkedIn link and check whether user is navigated to LinkedIn page" time="6.344">
+</testcase>
+<testcase name="Verify All Social Channel Links Click on Twitter link and check whether user is navigated to twitter page" classname="[Firefox] › TC_01_productPage.test.js › Verify All Social Channel Links › Click on Twitter link and check whether user is navigated to twitter page" time="3.823">
+</testcase>
+</testsuite>
+<testsuite name="TC_02_checkoutWorkflow.test.js" timestamp="1685195731683" hostname="" tests="1" failures="1" skipped="0" time="60.001" errors="0">
+<testcase name="Login as a standard user to complete the checkout workflow Login to App as a standard user" classname="[Firefox] › TC_02_checkoutWorkflow.test.js › Login as a standard user to complete the checkout workflow › Login to App as a standard user" time="60.001">
+<failure message="TC_02_checkoutWorkflow.test.js:47:6 Login to App as a standard user" type="FAILURE">
+<![CDATA[  [Firefox] › TC_02_checkoutWorkflow.test.js:47:6 › Login as a standard user to complete the checkout workflow › Login to App as a standard user 
+
+    Test timeout of 60000ms exceeded.
+
+    page.waitForSelector: Target closed
+    =========================== logs ===========================
+    waiting for locator('.peek') to be visible
+    ============================================================
+
+       at ../pages/basePage.js:109
+
+      107 |
+      108 | 	async isElementVisible(selector, errorMessage) {
+    > 109 | 		await this.page.waitForSelector(selector)
+          | 		                ^
+      110 | 		const element = this.page.locator(selector)
+      111 | 		try {
+      112 | 			const isVisible = await element.isVisible()
+
+        at ProductsPage.isElementVisible (/Users/Jay/Workspace/Playwright/Playwright-JavaScript-SauceDemo-Latest/pages/basePage.js:109:19)
+        at ProductsPage.verifyPeekImage (/Users/Jay/Workspace/Playwright/Playwright-JavaScript-SauceDemo-Latest/pages/productsPage.js:75:21)
+        at /Users/Jay/Workspace/Playwright/Playwright-JavaScript-SauceDemo-Latest/tests/TC_02_checkoutWorkflow.test.js:69:23
+        at /Users/Jay/Workspace/Playwright/Playwright-JavaScript-SauceDemo-Latest/tests/TC_02_checkoutWorkflow.test.js:66:3
+
+    Pending operations:
+      - page.waitForSelector at pages/basePage.js:109:19
+
+
+    attachment #1: video (video/webm) --------------------------------------------------------------
+    test-results/TC_02_checkoutWorkflow-Login-as-a-standard-use-e6fec-eckout-workflow-Login-to-App-as-a-standard-user-Firefox/video.webm
+    ------------------------------------------------------------------------------------------------
+
+    attachment #2: trace (application/zip) ---------------------------------------------------------
+    test-results/TC_02_checkoutWorkflow-Login-as-a-standard-use-e6fec-eckout-workflow-Login-to-App-as-a-standard-user-Firefox/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/TC_02_checkoutWorkflow-Login-as-a-standard-use-e6fec-eckout-workflow-Login-to-App-as-a-standard-user-Firefox/trace.zip
+
+    ------------------------------------------------------------------------------------------------
+
+    attachment #3: screenshot (image/png) ----------------------------------------------------------
+    test-results/TC_02_checkoutWorkflow-Login-as-a-standard-use-e6fec-eckout-workflow-Login-to-App-as-a-standard-user-Firefox/test-failed-1.png
+    ------------------------------------------------------------------------------------------------
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/TC_02_checkoutWorkflow-Login-as-a-standard-use-e6fec-eckout-workflow-Login-to-App-as-a-standard-user-Firefox/video.webm]]
+
+[[ATTACHMENT|../test-results/TC_02_checkoutWorkflow-Login-as-a-standard-use-e6fec-eckout-workflow-Login-to-App-as-a-standard-user-Firefox/trace.zip]]
+
+[[ATTACHMENT|../test-results/TC_02_checkoutWorkflow-Login-as-a-standard-use-e6fec-eckout-workflow-Login-to-App-as-a-standard-user-Firefox/test-failed-1.png]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="TC_03_checkoutWithSUandPGU.test.js" timestamp="1685195731683" hostname="" tests="1" failures="1" skipped="0" time="59.998" errors="0">
+<testcase name="Login as a Standard User to select a product item and then complete the checkout workflow with Performance Glitch User Login to App as a standard user" classname="[Firefox] › TC_03_checkoutWithSUandPGU.test.js › Login as a Standard User to select a product item and then complete the checkout workflow with Performance Glitch User › Login to App as a standard user" time="59.998">
+<failure message="TC_03_checkoutWithSUandPGU.test.js:89:6 Login to App as a standard user" type="FAILURE">
+<![CDATA[  [Firefox] › TC_03_checkoutWithSUandPGU.test.js:89:6 › Login as a Standard User to select a product item and then complete the checkout workflow with Performance Glitch User › Login to App as a standard user 
+
+    Test timeout of 60000ms exceeded.
+
+    page.waitForSelector: Target closed
+    =========================== logs ===========================
+    waiting for locator('.peek') to be visible
+    ============================================================
+
+       at ../pages/basePage.js:109
+
+      107 |
+      108 | 	async isElementVisible(selector, errorMessage) {
+    > 109 | 		await this.page.waitForSelector(selector)
+          | 		                ^
+      110 | 		const element = this.page.locator(selector)
+      111 | 		try {
+      112 | 			const isVisible = await element.isVisible()
+
+        at ProductsPage.isElementVisible (/Users/Jay/Workspace/Playwright/Playwright-JavaScript-SauceDemo-Latest/pages/basePage.js:109:19)
+        at ProductsPage.verifyPeekImage (/Users/Jay/Workspace/Playwright/Playwright-JavaScript-SauceDemo-Latest/pages/productsPage.js:75:21)
+        at /Users/Jay/Workspace/Playwright/Playwright-JavaScript-SauceDemo-Latest/tests/TC_03_checkoutWithSUandPGU.test.js:112:23
+        at /Users/Jay/Workspace/Playwright/Playwright-JavaScript-SauceDemo-Latest/tests/TC_03_checkoutWithSUandPGU.test.js:109:3
+
+    Pending operations:
+      - page.waitForSelector at pages/basePage.js:109:19
+
+
+    attachment #1: video (video/webm) --------------------------------------------------------------
+    test-results/TC_03_checkoutWithSUandPGU-Login-as-a-Standard-af5ed-nce-Glitch-User-Login-to-App-as-a-standard-user-Firefox/video.webm
+    ------------------------------------------------------------------------------------------------
+
+    attachment #2: trace (application/zip) ---------------------------------------------------------
+    test-results/TC_03_checkoutWithSUandPGU-Login-as-a-Standard-af5ed-nce-Glitch-User-Login-to-App-as-a-standard-user-Firefox/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/TC_03_checkoutWithSUandPGU-Login-as-a-Standard-af5ed-nce-Glitch-User-Login-to-App-as-a-standard-user-Firefox/trace.zip
+
+    ------------------------------------------------------------------------------------------------
+
+    attachment #3: screenshot (image/png) ----------------------------------------------------------
+    test-results/TC_03_checkoutWithSUandPGU-Login-as-a-Standard-af5ed-nce-Glitch-User-Login-to-App-as-a-standard-user-Firefox/test-failed-1.png
+    ------------------------------------------------------------------------------------------------
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/TC_03_checkoutWithSUandPGU-Login-as-a-Standard-af5ed-nce-Glitch-User-Login-to-App-as-a-standard-user-Firefox/video.webm]]
+
+[[ATTACHMENT|../test-results/TC_03_checkoutWithSUandPGU-Login-as-a-Standard-af5ed-nce-Glitch-User-Login-to-App-as-a-standard-user-Firefox/trace.zip]]
+
+[[ATTACHMENT|../test-results/TC_03_checkoutWithSUandPGU-Login-as-a-Standard-af5ed-nce-Glitch-User-Login-to-App-as-a-standard-user-Firefox/test-failed-1.png]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="TC_04_checkoutWithPUandPGU.test.js" timestamp="1685195731683" hostname="" tests="1" failures="0" skipped="0" time="35.022" errors="0">
+<testcase name="Login as a Problem user to select a product item and then complete the checkout workflow with Performance Glitch User Login to App as a problem user" classname="[Firefox] › TC_04_checkoutWithPUandPGU.test.js › Login as a Problem user to select a product item and then complete the checkout workflow with Performance Glitch User › Login to App as a problem user" time="35.022">
+</testcase>
+</testsuite>
+<testsuite name="TC_05_checkoutWithPGUandSU.test.js" timestamp="1685195731683" hostname="" tests="2" failures="0" skipped="0" time="30.808" errors="0">
+<testcase name="Login as a Locked out user and Performance glitch user and complete the checkout workflow with Standard user Login to App as a Locked out user user" classname="[Firefox] › TC_05_checkoutWithPGUandSU.test.js › Login as a Locked out user and Performance glitch user and complete the checkout workflow with Standard user › Login to App as a Locked out user user" time="5.525">
+</testcase>
+<testcase name="Login as a Locked out user and Performance glitch user and complete the checkout workflow with Standard user Login to App as a Performance glitch user" classname="[Firefox] › TC_05_checkoutWithPGUandSU.test.js › Login as a Locked out user and Performance glitch user and complete the checkout workflow with Standard user › Login to App as a Performance glitch user" time="25.283">
+</testcase>
+</testsuite>
+</testsuites>

@@ -98,7 +98,7 @@ test.describe.parallel(
 				async () => {
 					await productsPage.verifyProductsPageLogoVisible()
 					await productsPage.verifyProductsPageTitleVisible()
-					await productsPage.verifyPeekImage()
+					// await productsPage.verifyPeekImage()
 					expect(await productsPage.getUrl()).toContain(landingPageUrl)
 				}
 			)

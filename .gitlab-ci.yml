@@ -7,7 +7,7 @@ tests:
   script:
     - npm install
     - npx playwright install
-    - npm run test:firefox && npm run allure:report
+    - npm run test:firefox && allure generate -c ./artifacts/allure-results -o ./artifacts/allure-report
   artifacts:
         when: always
         paths:

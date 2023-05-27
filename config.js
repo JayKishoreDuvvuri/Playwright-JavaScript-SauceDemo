@@ -1,7 +1,7 @@
 export const baseUrl = 'https://www.saucedemo.com/';
 export const landingPageUrl = 'https://www.saucedemo.com/inventory.html';
 export const title = 'Swag Labs';
-export const sauceLabsTitle = 'Cross Browser Testing, Selenium Testing, Mobile Testing | Sauce Labs';
+export const sauceLabsTitle = 'Sauce Labs: Cross Browser Testing, Selenium Testing & Mobile Testing1';
 export const sauceLabsUrl = 'https://saucelabs.com/';
 export const onesie = '$7.99';
 export const fleeceJacket = '$49.99';

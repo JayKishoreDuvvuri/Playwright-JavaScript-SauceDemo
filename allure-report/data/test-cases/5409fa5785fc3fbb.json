@@ -1,0 +1,422 @@
+{
+  "uid" : "5409fa5785fc3fbb",
+  "name" : "Click on the \"About\" side nav bar link to check whether user is navigated to sauce labs page",
+  "fullName" : "TC_01_productPage.test.js#@smoke: Login as a standard user to verify the products page and logout from the application Click on the \"About\" side nav bar link to check whether user is navigated to sauce labs page",
+  "historyId" : "ac0d7cd4baaac4e118a07759c7bdbd74:c42e4eb120398df7b1640a5725c5d83a",
+  "time" : {
+    "start" : 1685196461260,
+    "stop" : 1685196474369,
+    "duration" : 13109
+  },
+  "status" : "failed",
+  "statusMessage" : "expect(received).toBe(expected) // Object.is equality\n\nExpected: \"Sauce Labs: Cross Browser Testing, Selenium Testing & Mobile Testing1\"\nReceived: \"Sauce Labs: Cross Browser Testing, Selenium Testing & Mobile Testing\"",
+  "statusTrace" : "\n    at /Users/Jay/Workspace/Playwright/Playwright-JavaScript-SauceDemo-Latest/tests/TC_01_productPage.test.js:191:44\n    at /Users/Jay/Workspace/Playwright/Playwright-JavaScript-SauceDemo-Latest/tests/TC_01_productPage.test.js:184:4",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "expect(received).toBe(expected) // Object.is equality\n\nExpected: \"Sauce Labs: Cross Browser Testing, Selenium Testing & Mobile Testing1\"\nReceived: \"Sauce Labs: Cross Browser Testing, Selenium Testing & Mobile Testing\"",
+    "statusTrace" : "\n    at /Users/Jay/Workspace/Playwright/Playwright-JavaScript-SauceDemo-Latest/tests/TC_01_productPage.test.js:191:44\n    at /Users/Jay/Workspace/Playwright/Playwright-JavaScript-SauceDemo-Latest/tests/TC_01_productPage.test.js:184:4",
+    "steps" : [ {
+      "name" : "Before Hooks",
+      "time" : {
+        "start" : 1685196461262,
+        "stop" : 1685196464224,
+        "duration" : 2962
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "browserContext.newPage",
+        "time" : {
+          "start" : 1685196462698,
+          "stop" : 1685196464224,
+          "duration" : 1526
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Verify the products page shopping cart icon and product sort container visible ",
+      "time" : {
+        "start" : 1685196464225,
+        "stop" : 1685196470175,
+        "duration" : 5950
+      },
+      "status" : "failed",
+      "statusMessage" : "expect(received).toBe(expected) // Object.is equality\n\nExpected: \"Sauce Labs: Cross Browser Testing, Selenium Testing & Mobile Testing1\"\nReceived: \"Sauce Labs: Cross Browser Testing, Selenium Testing & Mobile Testing\"",
+      "statusTrace" : "\n    at /Users/Jay/Workspace/Playwright/Playwright-JavaScript-SauceDemo-Latest/tests/TC_01_productPage.test.js:191:44\n    at /Users/Jay/Workspace/Playwright/Playwright-JavaScript-SauceDemo-Latest/tests/TC_01_productPage.test.js:184:4",
+      "steps" : [ {
+        "name" : "page.goto(https://www.saucedemo.com/)",
+        "time" : {
+          "start" : 1685196464236,
+          "stop" : 1685196465775,
+          "duration" : 1539
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "page.waitForLoadState",
+        "time" : {
+          "start" : 1685196465780,
+          "stop" : 1685196465927,
+          "duration" : 147
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "page.waitForSelector([data-test='username'])",
+        "time" : {
+          "start" : 1685196465929,
+          "stop" : 1685196466209,
+          "duration" : 280
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "page.fill([data-test='username'])",
+        "time" : {
+          "start" : 1685196466210,
+          "stop" : 1685196466441,
+          "duration" : 231
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "page.waitForSelector([data-test='password'])",
+        "time" : {
+          "start" : 1685196466443,
+          "stop" : 1685196466659,
+          "duration" : 216
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "page.fill([data-test='password'])",
+        "time" : {
+          "start" : 1685196466661,
+          "stop" : 1685196466888,
+          "duration" : 227
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "page.waitForSelector([data-test='login-button'])",
+        "time" : {
+          "start" : 1685196466889,
+          "stop" : 1685196467105,
+          "duration" : 216
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "page.click([data-test='login-button'])",
+        "time" : {
+          "start" : 1685196467105,
+          "stop" : 1685196467419,
+          "duration" : 314
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "page.waitForSelector(#react-burger-menu-btn)",
+        "time" : {
+          "start" : 1685196467421,
+          "stop" : 1685196467636,
+          "duration" : 215
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "page.click(#react-burger-menu-btn)",
+        "time" : {
+          "start" : 1685196467637,
+          "stop" : 1685196467892,
+          "duration" : 255
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "page.waitForSelector(#about_sidebar_link)",
+        "time" : {
+          "start" : 1685196467893,
+          "stop" : 1685196468116,
+          "duration" : 223
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "page.click(#about_sidebar_link)",
+        "time" : {
+          "start" : 1685196468117,
+          "stop" : 1685196469110,
+          "duration" : 993
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "page.title",
+        "time" : {
+          "start" : 1685196469112,
+          "stop" : 1685196470168,
+          "duration" : 1056
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "expect.toBe",
+        "time" : {
+          "start" : 1685196470171,
+          "stop" : 1685196470175,
+          "duration" : 4
+        },
+        "status" : "failed",
+        "statusMessage" : "expect(received).toBe(expected) // Object.is equality\n\nExpected: \"Sauce Labs: Cross Browser Testing, Selenium Testing & Mobile Testing1\"\nReceived: \"Sauce Labs: Cross Browser Testing, Selenium Testing & Mobile Testing\"",
+        "statusTrace" : "\n    at /Users/Jay/Workspace/Playwright/Playwright-JavaScript-SauceDemo-Latest/tests/TC_01_productPage.test.js:191:44\n    at /Users/Jay/Workspace/Playwright/Playwright-JavaScript-SauceDemo-Latest/tests/TC_01_productPage.test.js:184:4",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : true,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 14,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "After Hooks",
+      "time" : {
+        "start" : 1685196470175,
+        "stop" : 1685196474349,
+        "duration" : 4174
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Screenshot on failure",
+        "time" : {
+          "start" : 1685196470175,
+          "stop" : 1685196471918,
+          "duration" : 1743
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "page.screenshot",
+          "time" : {
+            "start" : 1685196470176,
+            "stop" : 1685196471909,
+            "duration" : 1733
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "hasContent" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      }, {
+        "name" : "browserContext.close",
+        "time" : {
+          "start" : 1685196472790,
+          "stop" : 1685196473694,
+          "duration" : 904
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 3,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "46cc10daeadb43e0",
+      "name" : "video",
+      "source" : "46cc10daeadb43e0.webm",
+      "type" : "video/webm",
+      "size" : 65027
+    }, {
+      "uid" : "55a12324350368a2",
+      "name" : "trace",
+      "source" : "55a12324350368a2.zip",
+      "type" : "application/zip",
+      "size" : 4794134
+    }, {
+      "uid" : "415697c3c457f1ea",
+      "name" : "screenshot",
+      "source" : "415697c3c457f1ea.png",
+      "type" : "image/png",
+      "size" : 280847
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 21,
+    "attachmentsCount" : 3,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "language",
+    "value" : "JavaScript"
+  }, {
+    "name" : "framework",
+    "value" : "Playwright"
+  }, {
+    "name" : "titlePath",
+    "value" : " > Firefox > TC_01_productPage.test.js > @smoke: Login as a standard user to verify the products page and logout from the application"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Firefox"
+  }, {
+    "name" : "suite",
+    "value" : "TC_01_productPage.test.js"
+  }, {
+    "name" : "subSuite",
+    "value" : "@smoke: Login as a standard user to verify the products page and logout from the application"
+  }, {
+    "name" : "host",
+    "value" : "Jay-MacBook-Pro"
+  }, {
+    "name" : "thread",
+    "value" : "Jay-MacBook-Pro-36557-playwright-worker-2"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "Project",
+    "value" : "Firefox"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "4bf42d8eeac416ba",
+      "status" : "passed",
+      "time" : {
+        "start" : 1685195885815,
+        "stop" : 1685195898020,
+        "duration" : 12205
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "5409fa5785fc3fbb.json",
+  "parameterValues" : [ "Firefox" ]
+}
