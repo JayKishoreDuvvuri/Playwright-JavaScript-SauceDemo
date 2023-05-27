@@ -11,7 +11,7 @@ docker_job:
 
   before_script:
     - npm install
-    - npx playwright install
+    - npx playwright install chrome
     - npx playwright install-deps   
     - npm install allure-commandline --save-dev
   script:
@@ -21,7 +21,7 @@ docker_job:
     - npx allure generate allure-results --clean 
   rules:
       - when: always
-  allow_failure: true
+  allow_failure: false
   artifacts: 
     when: always
     paths:
