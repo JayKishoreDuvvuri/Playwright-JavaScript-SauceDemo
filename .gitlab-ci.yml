@@ -1,28 +1,19 @@
 stages:
-  - tests
-  - allure
+  - test
 
 tests:
-  stage: tests
+  stage: test
   image: mcr.microsoft.com/playwright:v1.22.0-focal
   script:
     - npm install
     - npx playwright install
     - npm run allure:clean
     - npm run test:firefox
-
-
-test_report:
-  stage: allure
-  image: mcr.microsoft.com/playwright:v1.22.0-focal
-  dependencies: 
-    - tests
-  script:
-    - npm install
     - npm run allure:report
   artifacts:
      when: always
      paths:
           - allure-report/
           - allure-results/
+
 
