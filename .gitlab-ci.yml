@@ -12,4 +12,7 @@ tests:
         when: always
         paths:
             - playwright-report/
+            - results.xml
+        reports:
+            junit: results.xml
        
