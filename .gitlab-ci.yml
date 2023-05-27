@@ -11,6 +11,6 @@ tests:
   artifacts:
         when: always
         paths:
-            - artifacts/allure-report
-            - artifacts/allure-results
+            - allure-report/
+            - allure-results/
 
