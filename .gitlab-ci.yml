@@ -1,6 +1,6 @@
 stages:
   - tests
-  - test_report
+  - allure
 
 tests:
   stage: tests
@@ -13,15 +13,16 @@ tests:
 
 
 test_report:
-  stage: test_report
+  stage: allure
+  image: mcr.microsoft.com/playwright:v1.22.0-focal
   dependencies: 
-    - test
+    - tests
   script:
     - npm install
     - npm run allure:report
   artifacts:
      when: always
      paths:
-            - allure-report/
-            - allure-results/
+          - allure-report/
+          - allure-results/
 
