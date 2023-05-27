@@ -18,7 +18,6 @@ docker_job:
     
   after_script:
     - npx allure generate ./allure-results --clean -o ./allure-report
-    - npm run allure:clean
   rules:
       - when: always
   allow_failure: false
