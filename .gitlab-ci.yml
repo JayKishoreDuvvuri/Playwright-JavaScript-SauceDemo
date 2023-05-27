@@ -9,11 +9,11 @@ docker_job:
   image: mcr.microsoft.com/playwright:v1.34.3-jammy
 
   before_script:
-    - npm ci
+    - npm install
     - npx playwright install-deps   
     - npx playwright install
     - npm run allure:clean
-    - npm install allure-playwright --save-dev
+    - npm install allure-commandline --save-dev
   script:
     - npm run test:firefox
     

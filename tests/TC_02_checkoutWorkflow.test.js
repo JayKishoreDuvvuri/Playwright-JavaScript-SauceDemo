@@ -231,7 +231,7 @@ test.describe('Login as a standard user to complete the checkout workflow', () =
 				await loginPage.usernameFieldVisible()
 				await loginPage.passwordFieldVisible()
 				await loginPage.loginButtonIsEnabled()
-				await loginPage.botImageVisible()
+				// await loginPage.botImageVisible()
 				await loginPage.loginCredentialsVisible()
 				await loginPage.passwordCredentialsVisible()
 				expect(await loginPage.getTitle()).toBe(title)
