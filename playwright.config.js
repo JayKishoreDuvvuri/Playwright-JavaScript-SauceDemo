@@ -1,7 +1,7 @@
 export const testDir = 'tests'
 export const timeout = 60000
 export const retries = 1
-export const reporter = ['html'] 
+export const reporter = 'html'
 export const projects = [
 	{
 		name: `Chrome`,
