@@ -21,7 +21,7 @@ export const projects = [
 			browserName: `firefox`,
 			viewport: { width: 1720, height: 850 },
 			ignoreHTTPSErrors: true,
-			headless: false,
+			headless: true,
 			screenshot: `only-on-failure`,
 			video: `retain-on-failure`,
 			trace: `retain-on-failure`,
