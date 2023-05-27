@@ -9,12 +9,12 @@ docker_job:
   image: atools/chrome-headless:java11-node14-latest
 
   before_script:
-    - npm install
+    - npm ci
     - npx playwright install-deps   
-    - npx playwright install chrome
+    - npx playwright install
     - npm install allure-commandline --save-dev
   script:
-    - npm run test:chrome
+    - npm run test:firefox
     
   after_script:
     - npx allure generate allure-results --clean 
