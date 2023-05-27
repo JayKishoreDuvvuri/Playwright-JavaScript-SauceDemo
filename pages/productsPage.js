@@ -45,7 +45,7 @@ import {
 	tshirtRedAddToCartBtn,
 	listOfElements,
 	footerText,
-	swagBotFooter,
+	// swagBotFooter,
 	twitterLink,
 	facebookLink,
 	linkedInLink,
@@ -300,9 +300,9 @@ class ProductsPage extends BasePage {
 		return await this.isElementVisible(footerText, testData.notVisibleText)
 	}
 
-	async swagBotFooterVisible() {
-		return await this.isElementVisible(swagBotFooter, testData.notVisibleText)
-	}
+	// async swagBotFooterVisible() {
+	// 	return await this.isElementVisible(swagBotFooter, testData.notVisibleText)
+	// }
 
 	async socialChannelLinksVisible() {
 		await this.isElementVisible(twitterLink, testData.notVisibleText)

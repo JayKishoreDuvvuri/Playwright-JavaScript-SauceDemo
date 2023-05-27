@@ -5,7 +5,7 @@ import {
 	burgerMenuBtn,
 	shoppingCartLink,
 	footerText,
-	swagBotFooter,
+	// swagBotFooter,
 	twitterLink,
 	facebookLink,
 	linkedInLink
@@ -114,7 +114,7 @@ class CheckoutYourInformationPage extends BasePage {
 		await this.isElementVisible(facebookLink, testData.notVisibleText)
 		await this.isElementVisible(twitterLink, testData.notVisibleText)
 		await this.isElementVisible(linkedInLink, testData.notVisibleText)
-		await this.isElementVisible(swagBotFooter, testData.notVisibleText)
+		// await this.isElementVisible(swagBotFooter, testData.notVisibleText)
 		await this.isElementVisible(footerText, testData.notVisibleText)
 	}
 

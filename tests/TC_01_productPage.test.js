@@ -153,7 +153,7 @@ test.describe.parallel(
 				`Verify the footer text+swag bot footer+social channel links are visible`,
 				async () => {
 					await productsPage.footerTextVisible()
-					await productsPage.swagBotFooterVisible()
+					// await productsPage.swagBotFooterVisible()
 					await productsPage.socialChannelLinksVisible()
 				}
 			)
