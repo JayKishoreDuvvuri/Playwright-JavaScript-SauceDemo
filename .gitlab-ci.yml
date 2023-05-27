@@ -1,5 +1,6 @@
 stages:
   - tests
+  - allure
 
 tests:
   stage: tests
@@ -7,9 +8,22 @@ tests:
   script:
     - npm install
     - npx playwright install
-    - npm run test:firefox && allure generate -c ./artifacts/allure-results -o ./artifacts/allure-report
+    - npm run allure:clean
+    - npm run test:firefox
+
+
+test_report:
+  stage: allure
+  when: always
+  image: mcr.microsoft.com/playwright:v1.22.0-focal
+  dependencies: 
+    - test
+  script:
+    - npm install
+    - npm run allure:report
   artifacts:
-        when: always
+     when: always
+     artifacts:
         paths:
             - allure-report/
             - allure-results/
