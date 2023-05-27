@@ -6,8 +6,7 @@ docker_job:
   stage: testing
   tags:
     - docker
-  image: atools/chrome-headless:java11-node14-latest 
-  image: mcr.microsoft.com/playwright:v1.22.0-focal
+  image: atools/chrome-headless:java11-node14-latest
 
   before_script:
     - npm install
