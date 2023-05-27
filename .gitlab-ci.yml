@@ -14,7 +14,7 @@ tests:
 
 test_report:
   stage: allure
-  image: mcr.microsoft.com/playwright:v1.22.0-focal
+  image: pradapjackie/allure-reports-generation:1.0
   dependencies: 
     - test
   script:
