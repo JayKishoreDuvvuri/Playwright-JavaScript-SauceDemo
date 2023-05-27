@@ -1,6 +1,6 @@
 stages:
   - tests
-  - allure
+  - test_report
 
 tests:
   stage: tests
@@ -13,7 +13,7 @@ tests:
 
 
 test_report:
-  stage: allure
+  stage: test_report
   image: pradapjackie/allure-reports-generation:1.0
   dependencies: 
     - test
