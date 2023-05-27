@@ -10,8 +10,8 @@ docker_job:
 
   before_script:
     - npm install
-    - npx playwright install chrome
     - npx playwright install-deps   
+    - npx playwright install chrome
     - npm install allure-commandline --save-dev
   script:
     - npm run test:chrome
