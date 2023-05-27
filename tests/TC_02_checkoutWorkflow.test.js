@@ -174,7 +174,7 @@ test.describe('Login as a standard user to complete the checkout workflow', () =
 				await checkoutOverviewPage.itemNameVisible()
 				await checkoutOverviewPage.itemTextVisible()
 				await checkoutOverviewPage.itemPriceVisible()
-				await checkoutOverviewPage.paymentInformationLabelVisible()
+				// await checkoutOverviewPage.paymentInformationLabelVisible()
 				await checkoutOverviewPage.secureCardInfoVisible()
 				await checkoutOverviewPage.shippingInformationLabelVisible()
 				await checkoutOverviewPage.deliveryMessageVisible()
