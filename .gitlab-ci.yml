@@ -9,7 +9,6 @@ tests:
     - npx playwright install
     - npm run allure:clean
     - npm run test:firefox
-    - npm run allure:report
   artifacts:
      when: always
      paths:
