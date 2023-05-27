@@ -12,4 +12,4 @@ tests:
         when: always
         paths:
             - playwright-report/
-            - test-results/
+       
