@@ -17,7 +17,7 @@ docker_job:
     - npm run test:firefox
     
   after_script:
-    - npx allure generate ./allure-results --clean 
+    - npx allure generate ./allure-results --clean -o ./allure-report
     - npm run allure:clean
   rules:
       - when: always
