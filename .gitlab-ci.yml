@@ -14,7 +14,6 @@ tests:
 
 test_report:
   stage: allure
-  when: always
   image: mcr.microsoft.com/playwright:v1.22.0-focal
   dependencies: 
     - test
@@ -23,8 +22,7 @@ test_report:
     - npm run allure:report
   artifacts:
      when: always
-     artifacts:
-        paths:
+     paths:
             - allure-report/
             - allure-results/
 
