@@ -12,6 +12,7 @@ docker_job:
     - npm ci
     - npx playwright install-deps   
     - npx playwright install
+    - npm run allure:clean
     - npm install allure-commandline --save-dev
   script:
     - npm run test:firefox
