@@ -1,28 +1,17 @@
 stages:
-  - Regression-Tests
-  - Test-Report
+  - tests
 
-Regression-Tests:
-  stage: Regression-Tests
+tests:
+  stage: tests
   image: mcr.microsoft.com/playwright:v1.22.0-focal
   script:
     - npm install
     - npx playwright install
     - npm run test:firefox
-    - npm run allure:report
+    - allure generate -c ./artifacts/allure-results -o ./artifacts/allure-report
   artifacts:
         when: always
         paths:
+            - allure-results/
             - allure-report/
-
-  
-Test-Report:
-  stage: Test-Report
-  script:
-    - mkdir public
-    - mv allure-report/* public
-  artifacts:
-    paths:
-      - public
-    when: always
 
