@@ -6,12 +6,11 @@ docker_job:
   stage: testing
   tags:
     - docker
-  image: atools/chrome-headless:java11-node14-latest 
+  image: mcr.microsoft.com/playwright:v1.22.0-focal
 
   before_script:
     - npm install
-    - npx playwright install
-    - npx playwright install-deps   
+    - npx playwright install  
     - npm install allure-commandline --save-dev
   script:
     - npm run test:firefox
@@ -20,7 +19,7 @@ docker_job:
     - npx allure generate allure-results --clean 
   rules:
       - when: always
-  allow_failure: true
+  allow_failure: false
   artifacts: 
     when: always
     paths:
