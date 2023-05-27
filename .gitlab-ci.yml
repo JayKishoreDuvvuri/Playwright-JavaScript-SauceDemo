@@ -12,13 +12,13 @@ docker_job:
     - npm ci
     - npx playwright install-deps   
     - npx playwright install
-    - npm run allure:clean
     - npm install allure-commandline --save-dev
   script:
     - npm run test:firefox
     
   after_script:
-    - npx allure generate allure-results --clean 
+    - npx allure generate ./allure-results --clean 
+    - npm run allure:clean
   rules:
       - when: always
   allow_failure: false
