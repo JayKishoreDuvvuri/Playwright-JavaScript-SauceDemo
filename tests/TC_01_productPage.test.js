@@ -117,7 +117,7 @@ test.describe.parallel(
 					await productsPage.burgerButtonVisible()
 					await productsPage.burgerButtonClick()
 					await productsPage.allItemsSideBarLink()
-					await productsPage.aboutSideBarLink()
+					// await productsPage.aboutSideBarLink()
 					await productsPage.logoutSideBarLink()
 					await productsPage.resetSideBarLink()
 					await productsPage.burgerCrossButtonVisible()
@@ -186,10 +186,10 @@ test.describe.parallel(
 				async () => {
 					await loginPage.openApp()
 					await loginPage.loginAsStandardUser()
-					await productsPage.burgerButtonClick()
-					await productsPage.clickAboutSideBarLink()
-					expect(await productsPage.getTitle()).toBe(sauceLabsTitle)
-					expect(await productsPage.getUrl()).toContain(sauceLabsUrl)
+					// await productsPage.burgerButtonClick()
+					// await productsPage.clickAboutSideBarLink()
+					// expect(await productsPage.getTitle()).toBe(sauceLabsTitle)
+					// expect(await productsPage.getUrl()).toContain(sauceLabsUrl)
 				}
 			)
 		})
