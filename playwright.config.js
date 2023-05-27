@@ -1,7 +1,7 @@
 export const testDir = 'tests'
 export const timeout = 60000
 export const retries = 1
-export const reporter = [[`line`], ['junit', { outputFile: 'results.xml' }]]
+export const reporter = [[`line`], ['junit', { outputFile: 'results.xml' }], 'html', { outputFolder: 'outputDir/report' }] ]
 export const projects = [
 	{
 		name: `Chrome`,
