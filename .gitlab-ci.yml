@@ -6,10 +6,10 @@ docker_job:
   stage: testing
   tags:
     - docker
-  image: mcr.microsoft.com/playwright:v1.34.3-jammy
+  image: atools/firefox-headless:java11-node14-latest
 
   before_script:
-    - npm install
+    - npm ci
     - npx playwright install-deps   
     - npx playwright install
     - npm run allure:clean
