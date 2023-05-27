@@ -25,7 +25,7 @@
     "html-report": "npx playwright test --reporter=html && npx playwright show-report",
     "show-trace": "npx playwright show-trace",
     "allure:clean": "rm -rf allure-results",
-    "allure-generate": "allure generate ./allure-results --clean -o allure-report",
+    "allure-generate": "allure generate -c ./artifacts/allure-results -o ./artifacts/allure-report",
     "allure:report": "npm run allure-generate && allure serve"
   },
   "keywords": [
