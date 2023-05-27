@@ -9,18 +9,20 @@ Regression-Tests:
     - npm install
     - npx playwright install
     - npm run test:firefox
+    - npm run allure:report
   artifacts:
         when: always
         paths:
-            - allure-results/
+            - allure-report/
 
   
 Test-Report:
   stage: Test-Report
+  script:
+    - mkdir public
+    - mv allure-report/* public
   artifacts:
     paths:
-      - allure-results
-      - allure-report
+      - public
     when: always
-  script:
-    - npm run allure:report
+
