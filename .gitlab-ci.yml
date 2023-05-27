@@ -14,7 +14,6 @@ tests:
 
 test_report:
   stage: test_report
-  image: pradapjackie/allure-reports-generation:1.0
   dependencies: 
     - test
   script:
