@@ -77,7 +77,7 @@ class BasePage {
 	}
 
 	async getFirstElementFromTheList(selector) {
-		const rows = this.page.locator(selector)
+		const rows = await this.page.locator(selector)
 		const count = await rows.count()
 		for (let i = 0; i < count; ++i) {
 			const firstItem = await rows.nth(0).textContent()
@@ -86,7 +86,7 @@ class BasePage {
 	}
 
 	async getLastElementFromTheList(selector) {
-		const rows = this.page.locator(selector)
+		const rows = await this.page.locator(selector)
 		const count = await rows.count()
 		for (let i = 0; i < count; ++i) {
 			const lastItem = await rows.nth(5).textContent()
@@ -95,18 +95,10 @@ class BasePage {
 	}
 
 	async clickAllElements(selector) {
-		const rows = this.page.locator(selector)
+		const rows = await this.page.locator(selector)
 		const count = 2
 		for (let i = 0; i < count; ++i) {
 			await rows.nth(i).click()
-		}
-	}
-
-	async clickAllTheElements(selector) {
-		const rows = this.page.locator(selector)
-		const count = rows.count()
-		for (i in range(count)) {
-			return await rows.nth(i).click()
 		}
 	}
 
@@ -114,7 +106,7 @@ class BasePage {
 		const rows = this.page.locator(selector)
 		const count = rows.count()
 		for (i in range(count)) {
-			return await rows.nth(i).click((modifiers = ['Control', 'Shift']))
+			await rows.nth(i).click((modifiers = ['Control', 'Shift']))
 		}
 	}
 
