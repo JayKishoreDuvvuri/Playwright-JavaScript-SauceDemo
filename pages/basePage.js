@@ -91,7 +91,7 @@ class BasePage {
 		const count = await rows.count()
 		for (let i = 0; i < count; ++i) {
 			const lastItem = await rows.nth(5).textContent()
-			return lastItem
+			return lastItem 
 		}
 	}
 
