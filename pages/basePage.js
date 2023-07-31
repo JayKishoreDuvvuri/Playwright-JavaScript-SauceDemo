@@ -101,7 +101,7 @@ class BasePage {
 			await rows.nth(i).click()
 		}
 	}
-
+ 
 	async clickAllLinksInNewTabs(selector) {
 		const rows = this.page.locator(selector)
 		const count = rows.count()
