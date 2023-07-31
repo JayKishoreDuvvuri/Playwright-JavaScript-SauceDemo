@@ -91,15 +91,23 @@ class BasePage {
 		const count = await rows.count()
 		for (let i = 0; i < count; ++i) {
 			const lastItem = await rows.nth(5).textContent()
-			return lastItem 
+			return lastItem
 		}
 	}
 
-	async clickAllElements(selector) {
+	/*	async clickAllElements(selector) {
 		const rows = this.page.locator(selector)
 		const count = 2
 		for (let i = 0; i < count; ++i) {
 			await rows.nth(i).click()
+		}
+	} */
+
+	async clickAllElements(selector) {
+		const rows = this.page.locator(selector)
+		const count = rows.count()
+		for (i in range(count)) {
+			await rows.nth(i).click((modifiers = ['Control', 'Shift']))
 		}
 	}
 
