@@ -5,7 +5,6 @@ import {
 	burgerMenuBtn,
 	shoppingCartLink,
 	footerText,
-	// swagBotFooter,
 	twitterLink,
 	facebookLink,
 	linkedInLink

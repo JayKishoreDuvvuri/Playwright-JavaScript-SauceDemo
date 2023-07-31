@@ -6,7 +6,6 @@ import {
 	shoppingCartLink,
 	fleeceJacketname,
 	footerText,
-	// swagBotFooter,
 	twitterLink,
 	facebookLink,
 	linkedInLink

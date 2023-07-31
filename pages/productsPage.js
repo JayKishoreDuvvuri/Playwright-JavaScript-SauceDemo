@@ -45,7 +45,6 @@ import {
 	tshirtRedAddToCartBtn,
 	listOfElements,
 	footerText,
-	// swagBotFooter,
 	twitterLink,
 	facebookLink,
 	linkedInLink,
@@ -156,6 +155,13 @@ class ProductsPage extends BasePage {
 		return await this.verifyElementText(
 			shoppingCartLink,
 			testData.cartCountAsTwo
+		)
+	}
+
+	async shoppingCartCountAsSix() {
+		return await this.verifyElementText(
+			shoppingCartLink,
+			testData.cartCountAsSix
 		)
 	}
 

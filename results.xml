@@ -1,32 +1,6 @@
-<testsuites id="" name="" tests="10" failures="0" skipped="0" errors="0" time="21.34475800000038">
-<testsuite name="TC_01_productPage.test.js" timestamp="2023-07-31T13:21:15.582Z" hostname="Chrome" tests="5" failures="0" skipped="0" time="31.501" errors="0">
-<testcase name="@smoke: Login as a standard user to verify the products page and logout from the application › Login to App as a standard user" classname="TC_01_productPage.test.js" time="8.862">
-</testcase>
-<testcase name="@smoke: Login as a standard user to verify the products page and logout from the application › Click on the &quot;About&quot; side nav bar link to check whether user is navigated to sauce labs page" classname="TC_01_productPage.test.js" time="5.001">
-</testcase>
-<testcase name="Verify All Social Channel Links › Click on Facebook link and check whether user is navigated to Facebook page" classname="TC_01_productPage.test.js" time="6.154">
-</testcase>
-<testcase name="Verify All Social Channel Links › Click on LinkedIn link and check whether user is navigated to LinkedIn page" classname="TC_01_productPage.test.js" time="5.508">
-</testcase>
-<testcase name="Verify All Social Channel Links › Click on Twitter link and check whether user is navigated to twitter page" classname="TC_01_productPage.test.js" time="5.976">
-</testcase>
-</testsuite>
-<testsuite name="TC_02_checkoutWorkflow.test.js" timestamp="2023-07-31T13:21:15.582Z" hostname="Chrome" tests="1" failures="0" skipped="0" time="8.406" errors="0">
-<testcase name="Login as a standard user to complete the checkout workflow › Login to App as a standard user" classname="TC_02_checkoutWorkflow.test.js" time="8.406">
-</testcase>
-</testsuite>
-<testsuite name="TC_03_checkoutWithSUandPGU.test.js" timestamp="2023-07-31T13:21:15.582Z" hostname="Chrome" tests="1" failures="0" skipped="0" time="19.644" errors="0">
-<testcase name="Login as a Standard User to select a product item and then complete the checkout workflow with Performance Glitch User › Login to App as a standard user" classname="TC_03_checkoutWithSUandPGU.test.js" time="19.644">
-</testcase>
-</testsuite>
-<testsuite name="TC_04_checkoutWithPUandPGU.test.js" timestamp="2023-07-31T13:21:15.582Z" hostname="Chrome" tests="1" failures="0" skipped="0" time="17.412" errors="0">
-<testcase name="Login as a Problem user to select a product item and then complete the checkout workflow with Performance Glitch User › Login to App as a problem user" classname="TC_04_checkoutWithPUandPGU.test.js" time="17.412">
-</testcase>
-</testsuite>
-<testsuite name="TC_05_checkoutWithPGUandSU.test.js" timestamp="2023-07-31T13:21:15.582Z" hostname="Chrome" tests="2" failures="0" skipped="0" time="12.097" errors="0">
-<testcase name="Login as a Locked out user and Performance glitch user and complete the checkout workflow with Standard user › Login to App as a Locked out user user" classname="TC_05_checkoutWithPGUandSU.test.js" time="2.021">
-</testcase>
-<testcase name="Login as a Locked out user and Performance glitch user and complete the checkout workflow with Standard user › Login to App as a Performance glitch user" classname="TC_05_checkoutWithPGUandSU.test.js" time="10.076">
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="16.006479999999982">
+<testsuite name="TC_03_checkoutWithSUandPGU.test.js" timestamp="2023-07-31T17:03:12.892Z" hostname="Chrome" tests="1" failures="0" skipped="0" time="14.752" errors="0">
+<testcase name="Login as a Standard User to select a product item and then complete the checkout workflow with Performance Glitch User › Login to App as a standard user" classname="TC_03_checkoutWithSUandPGU.test.js" time="14.752">
 </testcase>
 </testsuite>
 </testsuites>

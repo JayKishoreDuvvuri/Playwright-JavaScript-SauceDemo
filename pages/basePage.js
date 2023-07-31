@@ -6,7 +6,7 @@ class BasePage {
 	}
 
 	async open(url) {
-		await this.page.goto(url)
+		return await this.page.goto(url)
 	}
 
 	async getTitle() {
@@ -26,7 +26,7 @@ class BasePage {
 	}
 
 	async waitForPageLoad() {
-		return await this.page.waitForLoadState('networkidle')
+		return await this.page.waitForLoadState('domcontentloaded')
 	}
 
 	async waitAndClick(selector) {
@@ -38,11 +38,11 @@ class BasePage {
 	}
 
 	async waitAndFill(selector, text) {
-		await this.page.fill(selector, text)
+		return await this.page.fill(selector, text)
 	}
 
 	async keyPress(selector, key) {
-		this.page.press(selector, key)
+		return await this.page.press(selector, key)
 	}
 
 	async takeScreenShot() {
@@ -57,7 +57,8 @@ class BasePage {
 	}
 
 	async verifyElementContainsText(selector, text) {
-		return await expect(this.page.locator(selector)).toContainText(text)
+		const locatorText = await this.page.locator(selector)
+		return await expect(locatorText).toContainText(text)
 	}
 
 	async verifyJSElementValue(selector, text) {
@@ -66,13 +67,11 @@ class BasePage {
 	}
 
 	async selectValueFromDropdown(selector, text) {
-		await this.page.locator(selector).waitFor()
 		const dropdown = await this.page.locator(selector)
 		return await dropdown.selectOption({ value: text })
 	}
 
 	async verifyElementAttribute(selector, attribute, value) {
-		await this.page.locator(selector).waitFor()
 		const textValue = await this.page.getAttribute(selector, attribute)
 		return expect(textValue.trim()).toBe(value)
 	}
@@ -95,19 +94,19 @@ class BasePage {
 		}
 	}
 
-	/*	async clickAllElements(selector) {
+	async clickAllElements(selector) {
 		const rows = this.page.locator(selector)
 		const count = 2
 		for (let i = 0; i < count; ++i) {
 			await rows.nth(i).click()
 		}
-	} */
+	}
 
-	async clickAllElements(selector) {
+	async clickAllTheElements(selector) {
 		const rows = this.page.locator(selector)
 		const count = rows.count()
 		for (i in range(count)) {
-			await rows.nth(i).click()
+			return await rows.nth(i).click()
 		}
 	}
 
@@ -115,7 +114,7 @@ class BasePage {
 		const rows = this.page.locator(selector)
 		const count = rows.count()
 		for (i in range(count)) {
-			await rows.nth(i).click((modifiers = ['Control', 'Shift']))
+			return await rows.nth(i).click((modifiers = ['Control', 'Shift']))
 		}
 	}
 

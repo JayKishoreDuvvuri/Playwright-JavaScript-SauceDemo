@@ -17,6 +17,7 @@
 	"shoppingCartCount": "1",
 	"cartCountEmpty": "",
 	"cartCountAsTwo": "2",
+	"cartCountAsSix": "6",
 	"cartQuantity": "1",
 	"completeHeaderText": "Thank you for your order!",
 	"completeOrderText": "Your order has been dispatched, and will arrive just as fast as the pony can get there!",
