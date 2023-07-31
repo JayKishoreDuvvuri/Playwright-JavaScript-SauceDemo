@@ -1,41 +1,10 @@
 stages:
-  - testing
-  - deploy 
+  - test
 
-docker_job:
-  stage: testing
-  tags:
-    - docker
-  image: atools/firefox-headless:java11-node14-latest
-
-  before_script:
-    - npm ci
-    - npx playwright install-deps   
-    - npx playwright install
-    - npm install allure-commandline --save-dev
+tests:
+  stage: test
+  image: mcr.microsoft.com/playwright:v1.36.0-jammy
   script:
-    - npm run test:firefox
-    
-  after_script:
-    - npx allure generate ./allure-results --clean -o ./allure-report
-  rules:
-      - when: always
-  allow_failure: false
-  artifacts: 
-    when: always
-    paths:
-      - ./allure-report
-    expire_in: 1 day 
-
-pages: 
-  stage: deploy
-  script:
-    - mkdir public 
-    - mv ./allure-report/* public
-  artifacts:
-    paths:
-      - public
-  rules:
-    - when: always
-
-
+    - npm install
+    - npx playwright install chrome
+    - npm run test:chrome

@@ -77,7 +77,6 @@ test.describe.parallel(
 				`Verify Login button is enabled and bot image is visible`,
 				async () => {
 					await loginPage.loginButtonIsEnabled()
-					// await loginPage.botImageVisible()
 				}
 			)
 
@@ -92,16 +91,6 @@ test.describe.parallel(
 			await test.step(`Login as a Standard user`, async () => {
 				await loginPage.loginAsStandardUser()
 			})
-
-			// await test.step(
-			// 	`Verify landing page logo+title+image+url visible`,
-			// 	async () => {
-			// 		await productsPage.verifyProductsPageLogoVisible()
-			// 		await productsPage.verifyProductsPageTitleVisible()
-			// 		// await productsPage.verifyPeekImage()
-			// 		expect(await productsPage.getUrl()).toContain(landingPageUrl)
-			// 	}
-			// )
 
 			await test.step(
 				`Verify the products page shopping cart icon and product sort container visible `,
@@ -153,7 +142,6 @@ test.describe.parallel(
 				`Verify the footer text+swag bot footer+social channel links are visible`,
 				async () => {
 					await productsPage.footerTextVisible()
-					// await productsPage.swagBotFooterVisible()
 					await productsPage.socialChannelLinksVisible()
 				}
 			)
@@ -168,7 +156,6 @@ test.describe.parallel(
 					await loginPage.usernameFieldVisible()
 					await loginPage.passwordFieldVisible()
 					await loginPage.loginButtonIsEnabled()
-					// await loginPage.botImageVisible()
 					await loginPage.loginCredentialsVisible()
 					await loginPage.passwordCredentialsVisible()
 					expect(await loginPage.getTitle()).toBe(title)

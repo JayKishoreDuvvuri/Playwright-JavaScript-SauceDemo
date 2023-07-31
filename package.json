@@ -16,7 +16,7 @@
     "test:edge-report": "npx playwright test --project=Edge --reporter=html && npx playwright show-report",
     "test:safari-report": "npx playwright test --project=Safari --reporter=line,allure-playwright",
     "test:shard": "npx playwright test TC_01_productPage.test.js --shard=3/3 --project=Chrome",
-    "test:one": "npx playwright test TC_01_productPage.test.js --project=Firefox",
+    "test:one": "npx playwright test TC_01_productPage.test.js --project=Chrome",
     "test:two": "npx playwright test TC_02_checkoutWorkflow.test.js  --project=Chrome",
     "test:three": "npx playwright test TC_03_checkoutWithSUandPGU.test.js --project=Chrome",
     "test:four": "npx playwright test TC_04_checkoutWithPUandPGU.test.js --project=Chrome",
@@ -37,7 +37,7 @@
   "author": "Jay Kishore Duvvuri",
   "license": "ISC",
   "dependencies": {
-    "@playwright/test": "^1.29.1",
+    "@playwright/test": "^1.36.2",
     "allure-playwright": "^2.4.0",
     "fs": "^0.0.1-security",
     "prettier": "^2.6.2"

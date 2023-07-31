@@ -13,6 +13,10 @@ class BasePage {
 		return await this.page.title()
 	}
 
+	async pause() {
+		return await this.page.pause()
+	}
+
 	async getUrl() {
 		return this.page.url()
 	}
@@ -26,17 +30,14 @@ class BasePage {
 	}
 
 	async waitAndClick(selector) {
-		await this.page.waitForSelector(selector)
 		return await this.page.click(selector)
 	}
 
 	async waitAndHardClick(selector) {
-		await this.page.waitForSelector(selector)
 		return await this.page.$eval(selector, element => element.click())
 	}
 
 	async waitAndFill(selector, text) {
-		await this.page.waitForSelector(selector)
 		await this.page.fill(selector, text)
 	}
 
@@ -51,30 +52,27 @@ class BasePage {
 	}
 
 	async verifyElementText(selector, text) {
-		await this.page.waitForSelector(selector)
 		const textValue = await this.page.textContent(selector)
 		return expect(textValue.trim()).toBe(text)
 	}
 
 	async verifyElementContainsText(selector, text) {
-		await this.page.waitForSelector(selector)
 		return await expect(this.page.locator(selector)).toContainText(text)
 	}
 
 	async verifyJSElementValue(selector, text) {
-		await this.page.waitForSelector(selector)
 		const textValue = await this.page.$eval(selector, element => element.value)
 		return expect(textValue.trim()).toBe(text)
 	}
 
 	async selectValueFromDropdown(selector, text) {
-		await this.page.waitForSelector(selector)
+		await this.page.locator(selector).waitFor()
 		const dropdown = await this.page.locator(selector)
 		return await dropdown.selectOption({ value: text })
 	}
 
 	async verifyElementAttribute(selector, attribute, value) {
-		await this.page.waitForSelector(selector)
+		await this.page.locator(selector).waitFor()
 		const textValue = await this.page.getAttribute(selector, attribute)
 		return expect(textValue.trim()).toBe(value)
 	}
@@ -106,7 +104,6 @@ class BasePage {
 	}
 
 	async isElementVisible(selector, errorMessage) {
-		await this.page.waitForSelector(selector)
 		const element = this.page.locator(selector)
 		try {
 			const isVisible = await element.isVisible()
@@ -122,7 +119,6 @@ class BasePage {
 	}
 
 	async isElementEnabled(selector, errorMessage) {
-		await this.page.waitForSelector(selector)
 		const element = this.page.locator(selector)
 		try {
 			const isEnabled = await element.isEnabled()
@@ -133,7 +129,6 @@ class BasePage {
 	}
 
 	async isElementChecked(selector, errorMessage) {
-		await this.page.waitForSelector(selector)
 		const element = this.page.locator(selector)
 		try {
 			const isChecked = await element.isChecked()
