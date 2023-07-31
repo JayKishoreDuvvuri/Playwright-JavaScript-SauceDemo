@@ -107,6 +107,14 @@ class BasePage {
 		const rows = this.page.locator(selector)
 		const count = rows.count()
 		for (i in range(count)) {
+			await rows.nth(i).click()
+		}
+	}
+
+	async clickAllLinksInNewTabs(selector) {
+		const rows = this.page.locator(selector)
+		const count = rows.count()
+		for (i in range(count)) {
 			await rows.nth(i).click((modifiers = ['Control', 'Shift']))
 		}
 	}
