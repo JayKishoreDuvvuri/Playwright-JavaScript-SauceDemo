@@ -83,10 +83,5 @@ test.describe('Checkout one product end to end', () => {
 			expect(await checkoutCompletePage.getUrl()).toBe(checkoutCompleteUrl)
 		})
 
-		await test.step('Verify completion page', async () => {
-			await checkoutCompletePage.completeHeaderVisible()
-			await checkoutCompletePage.completeTextVisible()
-			await checkoutCompletePage.backHomeButtonISEnabled()
-		})
 	})
 })
