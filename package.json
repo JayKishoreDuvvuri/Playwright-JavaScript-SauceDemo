@@ -21,6 +21,7 @@
     "test:three": "npx playwright test TC_03_checkoutWithSUandPGU.test.js --project=Chrome",
     "test:four": "npx playwright test TC_04_checkoutWithPUandPGU.test.js --project=Chrome",
     "test:five": "npx playwright test TC_05_checkoutWithPGUandSU.test.js --project=Chrome",
+    "test:six": "npx playwright test TC_06_checkoutOneProduct.test.js --project=Chrome",
     "test:record": "npx playwright codegen",
     "html-report": "npx playwright test --reporter=html && npx playwright show-report",
     "show-trace": "npx playwright show-trace",

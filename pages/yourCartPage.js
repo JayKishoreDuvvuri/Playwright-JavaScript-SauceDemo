@@ -127,9 +127,14 @@ class YourCartPage extends BasePage {
 		return await this.waitAndClick(removeButtonTshirtRed)
 	}
 
+	async cartItemAndQuantityLabelVisible() {
+		await this.isElementVisible(cartQuantityLabel, testData.notVisibleText)
+		return await this.isElementVisible(cartItemLabel, testData.notVisibleText)
+	}
+
 	async cartItemAndQuantityLabelNotVisible() {
 		await this.isElementNotVisible(cartQuantityLabel, testData.notAvailabletext)
-		await this.isElementNotVisible(cartItemLabel, testData.notAvailabletext)
+		return await this.isElementNotVisible(cartItemLabel, testData.notAvailabletext)
 	}
 }
 export default YourCartPage
